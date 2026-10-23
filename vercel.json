@@ -1,7 +1,8 @@
 {
-  "buildCommand": "bun run build",
-  "outputDirectory": "apps/web/.next",
-  "installCommand": "bun install",
-  "framework": "nextjs",
-  "regions": ["bom1"]
+  "services": {
+    "web": {
+      "type": "nextjs",
+      "src": "apps/web"
+    }
+  }
 }
