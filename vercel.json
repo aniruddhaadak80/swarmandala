@@ -1,7 +1,6 @@
 {
   "services": {
     "web": {
-      "type": "nextjs",
       "src": "apps/web",
       "root": "apps/web"
     }
