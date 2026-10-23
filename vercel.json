@@ -1,7 +1,6 @@
 {
   "services": {
     "web": {
-      "src": "apps/web",
       "root": "apps/web"
     }
   }
