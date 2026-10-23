@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+// No edge runtime: services deployment requires the Node.js runtime.
 
 const size = { width: 1200, height: 630 };
 
