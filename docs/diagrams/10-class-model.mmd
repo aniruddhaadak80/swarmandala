@@ -1,0 +1,164 @@
+classDiagram
+  class Raga {
+    +string slug
+    +string name
+    +string devanagari
+    +Thaat thaat
+    +string[] aroha
+    +string[] avaroha
+    +Swara vadi
+    +Swara samvadi
+    +PraharNumber prahar
+    +RasaId[] rasa
+    +string mood
+    +string[] pakad
+    +string description
+    +string[] tags
+    +Season season
+    +uniqueNotes() Swara[]
+    +pitchClassSignature() string
+    +compareWith(Raga other) RagaComparison
+    +relatedIn(Raga[] pool, int limit) Raga[]
+  }
+
+  class Prahar {
+    +PraharNumber number
+    +string name
+    +string devanagari
+    +string english
+    +int startHour
+    +int endHour
+    +string blurb
+    +praharForMinutes(int minutes) PraharNumber
+    +praharDistance(PraharNumber from, PraharNumber to) int
+    +praharProgress(int minutes) number
+    +nextPrahar(PraharNumber number) PraharNumber
+    +clockAngle(int minutes) number
+  }
+
+  class Taal {
+    +TaalId id
+    +string name
+    +string devanagari
+    +int matras
+    +int[] vibhags
+    +Bol[] theka
+    +int[] khali
+    +string description
+    +bolAt(int beat) Bol
+    +isSam(int beat) boolean
+    +isKhali(int beat) boolean
+    +vibhagStartAt(int beat) int
+    +beatsUntilSam(int beat) int
+  }
+
+  class AudioEngine {
+    -AudioContext context
+    -GainNode master
+    -OscillatorNode[] droneVoices
+    -boolean muted
+    -EngineState state
+    -int saHz
+    +arm() void
+    +startDrone(int saHz) void
+    +startPractice(Taal taal, int bpm) void
+    +pluckNote(string note) void
+    +mute() void
+    +unmute() void
+    +setSa(int hz) void
+    +stop() void
+    +dispose() void
+  }
+
+  class AudioContext {
+    <<browser>>
+    +number sampleRate
+    +string state
+    +resume() Promise
+    +suspend() Promise
+    +close() Promise
+  }
+
+  class Swara {
+    <<enumeration>>
+    S
+    r
+    R
+    g
+    G
+    M
+    M_tivra
+    P
+    d
+    D
+    n
+    N
+  }
+
+  class Thaat {
+    <<enumeration>>
+    Bilaval
+    Khamaj
+    Kafi
+    Asavari
+    Bhairav
+    Bhairavi
+    Kalyan
+    Marwa
+    Poorvi
+    Todi
+  }
+
+  class RasaId {
+    <<enumeration>>
+    shringar
+    hasya
+    karuna
+    raudra
+    veera
+    bhayanaka
+    bibhatsa
+    adbhuta
+    shanta
+  }
+
+  class Season {
+    <<enumeration>>
+    spring
+    summer
+    monsoon
+    autumn
+    winter
+  }
+
+  class EngineState {
+    <<enumeration>>
+    idle
+    armed
+    drone
+    practice
+    muted
+    stopped
+  }
+
+  class RagaComparison {
+    +Swara[] shared
+    +Swara[] onlyA
+    +Swara[] onlyB
+    +number similarity
+  }
+
+  Raga --> Thaat : classified by
+  Raga --> Prahar : sung in
+  Raga --> Swara : vadi
+  Raga --> Swara : samvadi
+  Raga --> RasaId : evokes
+  Raga --> Season : associated with
+  Raga ..> RagaComparison : produces
+  AudioEngine --> Taal : cycles
+  AudioEngine --> Raga : voices
+  AudioEngine --> Prahar : schedules
+  AudioEngine --> EngineState : exposes
+  AudioEngine --> AudioContext : owns
+  note for Raga "vadi and samvadi may be null; season is optional"
+  note for Swara "M_tivra is written M^ in the seed notation"

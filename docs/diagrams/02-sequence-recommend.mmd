@@ -1,0 +1,33 @@
+sequenceDiagram
+  autonumber
+  actor Listener
+  participant UI as Atlas or clock UI
+  participant API as /api/recommend
+  participant Core as recommendRagas
+  participant Clock as praharForMinutes
+  participant Seed as RAGAS dataset
+  participant Engine as AudioEngine
+  participant Rasa as rasa reference service
+
+  Listener->>UI: Open the atlas or move the clock hand
+  UI->>API: GET /api/recommend with minutes and limit
+  API->>API: Parse and clamp minutes to 0 through 1439
+  API->>Core: recommendRagas dataset, minutes, options
+  Core->>Clock: Resolve the watch for this minute
+  Clock-->>Core: Prahar number 1 through 8
+  Core->>Seed: Read prahar, season, rasa, and tags
+  Seed-->>Core: Candidate ragas
+  Core->>Core: Score same watch 100, adjacent 32, two away 12
+  Core->>Core: Add 20 for matching season and 14 for monsoon
+  Core->>Core: Sort by score then name and apply the limit
+  Core-->>API: ScoredRaga array with reasons
+  API-->>UI: JSON response
+  UI-->>Listener: Render the top three with explanations
+
+  Listener->>UI: Start the tanpura
+  UI->>Engine: Create and resume AudioContext inside the gesture
+  Engine-->>UI: Drone running at the chosen Sa
+  UI-->>Listener: Unmuted audio, animated meter
+
+  Note over Rasa,Core: Python tests encode the same scoring contract and rank order
+  Note over UI,Engine: Mute ramps master gain to zero without rebuilding the graph

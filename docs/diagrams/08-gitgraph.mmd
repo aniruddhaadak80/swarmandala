@@ -1,0 +1,35 @@
+gitGraph
+  commit id: "monorepo scaffold" tag: "v0.1.0"
+  commit id: "swara notation and tests"
+  branch core
+  checkout core
+  commit id: "prahar clock maths"
+  commit id: "taal cycle helpers"
+  checkout main
+  merge core tag: "v0.2.0"
+  branch seed
+  checkout seed
+  commit id: "24 typed ragas"
+  commit id: "runtime validation guard"
+  checkout main
+  merge seed tag: "v0.3.0"
+  branch audio
+  checkout audio
+  commit id: "additive tanpura partials"
+  commit id: "membrane tabla voices"
+  checkout main
+  merge audio tag: "v0.4.0"
+  branch atlas
+  checkout atlas
+  commit id: "atlas and raga routes"
+  commit id: "prahar clock page"
+  checkout main
+  merge atlas tag: "v0.5.0"
+  branch rasa
+  checkout rasa
+  commit id: "FastAPI parity service"
+  checkout main
+  merge rasa tag: "v0.6.0"
+  commit id: "accessibility and reduced motion"
+  commit id: "architecture diagrams and ADRs"
+  commit id: "public launch" tag: "v1.0.0" type: HIGHLIGHT

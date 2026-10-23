@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <title>Swarmandala — home</title>
+  <desc>Home screen: the hour, the suggested raga, and the swara mandala.</desc>
+
+  <defs>
+    <radialGradient id="homeGlow" cx="1070" cy="378" r="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A33D" stop-opacity="0.065"/>
+      <stop offset="1" stop-color="#E8A33D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="#0E0C0A"/>
+  <rect width="1440" height="760" fill="url(#homeGlow)"/>
+
+  <!-- top navigation -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(80 36)">
+      <circle r="11.5" stroke="#F4EBDD" stroke-opacity="0.38"/>
+      <circle r="4.4" fill="#E8A33D"/>
+      <circle cy="-11.5" r="1.6" fill="#F4EBDD"/>
+      <circle cx="8.1" cy="8.1" r="1.6" fill="#E8A33D"/>
+      <circle cx="-8.1" cy="8.1" r="1.6" fill="#F4EBDD" fill-opacity="0.5"/>
+      <circle cx="11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+      <circle cx="-11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+    </g>
+    <text x="103" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#F4EBDD">swarmandala</text>
+
+    <g font-size="11.5" letter-spacing="1.15" fill="#B9AB97">
+      <text x="596" y="46">Atlas</text>
+      <text x="672" y="46">Prahar clock</text>
+      <text x="796" y="46">Compare</text>
+      <text x="892" y="46">Practice</text>
+      <text x="986" y="46">About</text>
+    </g>
+
+    <rect x="1214" y="22" width="146" height="28" rx="14" stroke="#F4EBDD" stroke-opacity="0.16"/>
+    <text x="1287" y="40" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B9AB97">19:24<tspan fill="#B9AB97" fill-opacity="0.5"> · </tspan><tspan fill="#E8A33D">YAMAN</tspan></text>
+  </g>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#F4EBDD" stroke-opacity="0.16"/>
+
+  <!-- hero copy -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="80" y="152" font-size="10" letter-spacing="2.7" fill="#E8A33D">A LIVING ATLAS OF HINDUSTANI RAGA</text>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#F4EBDD">
+    <text x="80" y="254" font-size="80">The day has</text>
+    <text x="80" y="332" font-size="80">a scale<tspan fill="#E8A33D">.</tspan></text>
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#B9AB97">
+    <text x="80" y="376">Twenty-four ragas, each tied to a watch of the day. Tune a drone,</text>
+    <text x="80" y="400">trace a scale, and find out what 6pm is supposed to sound like.</text>
+  </g>
+
+  <rect x="80" y="434" width="190" height="46" rx="23" fill="#E8A33D"/>
+  <text x="175" y="462" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" letter-spacing="1.5" fill="#0E0C0A">ENTER THE ATLAS</text>
+  <rect x="286" y="434" width="226" height="46" rx="23" stroke="#F4EBDD" stroke-opacity="0.24"/>
+  <text x="399" y="462" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" letter-spacing="1.3" fill="#F4EBDD">WHAT IS PLAYING NOW?</text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#B9AB97">
+    <circle cx="84" cy="507" r="2" fill="#E8A33D" fill-opacity="0.8"/>
+    <text x="96" y="511">Sound stays off until you ask for it.</text>
+  </g>
+
+  <!-- the hour mandala -->
+  <g>
+    <circle cx="1070" cy="378" r="232" stroke="#F4EBDD" stroke-opacity="0.10"/>
+    <circle cx="1070" cy="378" r="214" stroke="#F4EBDD" stroke-opacity="0.26"/>
+    <circle cx="1070" cy="378" r="196" stroke="#F4EBDD" stroke-opacity="0.08"/>
+
+    <circle cx="1070" cy="378" r="180" stroke="#F4EBDD" stroke-opacity="0.07"/>
+    <path d="M1070 198 A180 180 0 0 1 1225.88 288" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M1225.88 288 A180 180 0 0 1 1225.88 468" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M1225.88 468 A180 180 0 0 1 1070 558" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M1070 558 A180 180 0 0 1 980 533.88" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M980 533.88 A180 180 0 0 1 890 378" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M890 378 A180 180 0 0 1 980 222.12" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <path d="M980 222.12 A180 180 0 0 1 1070 198" stroke="#E8A33D" stroke-opacity="0.52" stroke-width="1.4"/>
+    <circle cx="1177" cy="222.12" r="2" fill="#C94F35" fill-opacity="0.55"/>
+
+    <circle cx="1070" cy="378" r="108" fill="#E8A33D"/>
+    <circle cx="1070" cy="378" r="99" stroke="#0E0C0A" stroke-opacity="0.09"/>
+    <circle cx="1070" cy="378" r="118" stroke="#E8A33D" stroke-opacity="0.22"/>
+
+    <!-- twelve swara positions -->
+    <circle cx="1070" cy="164" r="8" fill="#F4EBDD"/>
+    <circle cx="1070" cy="164" r="13" stroke="#E8A33D" stroke-opacity="0.55"/>
+    <circle cx="1177" cy="192.67" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+    <circle cx="1255.33" cy="271" r="5" fill="#E8A33D"/>
+    <circle cx="1284" cy="378" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+    <circle cx="1255.33" cy="485" r="5" fill="#E8A33D"/>
+    <circle cx="1177" cy="563.33" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+    <circle cx="1070" cy="592" r="5" fill="#E8A33D"/>
+    <circle cx="963" cy="563.33" r="5" fill="#E8A33D"/>
+    <circle cx="884.67" cy="485" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+    <circle cx="856" cy="378" r="5" fill="#E8A33D"/>
+    <circle cx="884.67" cy="271" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+    <circle cx="963" cy="192.67" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2.2" fill="#E8A33D">
+      <text x="1070" y="132" text-anchor="middle">Sa</text>
+    </g>
+
+    <g font-family="Georgia, 'Times New Roman', serif" fill="#0E0C0A" text-anchor="middle">
+      <text x="1070" y="386" font-size="40">19:24</text>
+    </g>
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#0E0C0A" text-anchor="middle">
+      <text x="1070" y="412" font-size="8.5" letter-spacing="1.8" fill-opacity="0.7">PRADOSHA · WATCH 6</text>
+      <text x="1070" y="443" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="4.5" fill-opacity="0.85">YAMAN</text>
+    </g>
+  </g>
+
+  <text x="1070" y="646" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#B9AB97">At 19:24, the atlas suggests <tspan fill="#E8A33D">Yaman</tspan> — tivra Ma catches the lamplight.</text>
+
+  <!-- in the atlas now -->
+  <line x1="80" y1="692" x2="1360" y2="692" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="80" y="722" font-size="9" letter-spacing="2.1" fill="#B9AB97">IN THE ATLAS NOW · PRADOSHA</text>
+    <text x="1360" y="722" text-anchor="end" font-size="9" letter-spacing="1.8" fill="#E8A33D">ALL 24 RAGAS →</text>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="738" width="400" height="78" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <rect x="80" y="738" width="2" height="78" fill="#E8A33D"/>
+    <text x="100" y="766" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F4EBDD">Yaman</text>
+    <text x="100" y="786" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="11" fill="#B9AB97">यमन</text>
+    <text x="460" y="766" text-anchor="end" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">WATCH 6 · 19—22</text>
+    <text x="460" y="796" text-anchor="end" font-size="10.5" fill="#B9AB97">Tivra Ma catches the lamplight.</text>
+
+    <rect x="500" y="738" width="400" height="78" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="520" y="766" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F4EBDD">Bhupali</text>
+    <text x="520" y="786" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="11" fill="#B9AB97">भूपाली</text>
+    <text x="880" y="766" text-anchor="end" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">WATCH 6 · 19—22</text>
+    <text x="880" y="796" text-anchor="end" font-size="10.5" fill="#B9AB97">Five notes, no Ma, no Ni.</text>
+
+    <rect x="920" y="738" width="400" height="78" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="940" y="766" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F4EBDD">Hamsadhwani</text>
+    <text x="940" y="786" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="11" fill="#B9AB97">हंसध्वनि</text>
+    <text x="1300" y="766" text-anchor="end" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">WATCH 6 · 19—22</text>
+    <text x="1300" y="796" text-anchor="end" font-size="10.5" fill="#B9AB97">Arrives already smiling.</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="80" y1="832" x2="1360" y2="832" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.8" fill="#B9AB97" fill-opacity="0.7">
+    <text x="80" y="856">SWARMANDALA · BUILT IN KOLKATA</text>
+    <text x="1360" y="856" text-anchor="end">HOME — 01 / 06</text>
+  </g>
+</svg>

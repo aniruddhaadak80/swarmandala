@@ -1,0 +1,43 @@
+flowchart TD
+  Landing["Landing: hear the hour"] --> Choice{"What brings you in?"}
+  Choice -->|browse| Atlas["Atlas of 24 ragas"]
+  Choice -->|time| Clock["Prahar clock"]
+  Choice -->|play| PracticePage["Practice room"]
+  Choice -->|compare| ComparePage["Compare two ragas"]
+
+  A11y["Keyboard and screen reader path"] -.-> Atlas
+  A11y -.-> Clock
+  A11y -.-> PracticePage
+
+  Atlas --> Filter["Filter by thaat, season, or watch"]
+  Filter --> RagaPage["Raga page"]
+  Clock --> Hand["Drag the hand or use arrow keys"]
+  Hand --> Suggest["Recommended for this watch"]
+  Suggest --> RagaPage
+
+  RagaPage --> Read["Read aroha, avaroha, and pakad"]
+  Read --> Listen{"Start the tanpura?"}
+  Listen -->|yes| Gesture["User gesture unlocks audio"]
+  Gesture --> Engine["AudioEngine starts the drone"]
+  Engine --> Mode{"Mute or reduced motion?"}
+  Mode -->|mute| Silent["Silent visuals, graph still running"]
+  Mode -->|reduced motion| Static["Static meter, audio continues"]
+  Mode -->|neither| Sound["Drone and scale playback"]
+  Listen -->|no| Silent
+
+  Sound --> PracticePage
+  Silent --> PracticePage
+  Static --> PracticePage
+  PracticePage --> Taal["Choose teentaal, jhaptal, roopak, or keherwa"]
+  Taal --> Tempo["Set the tempo"]
+  Tempo --> Begin["Begin the theka"]
+  Begin --> Sam["Track sam and khali"]
+  Sam --> Stop["Stop and suspend the context"]
+
+  ComparePage --> Pair["Pick two ragas"]
+  Pair --> Diff["Shared and unique swaras"]
+  Diff --> Similarity["Jaccard similarity"]
+  Similarity --> RagaPage
+
+  Stop --> Return["Return to the atlas"]
+  Static --> Return

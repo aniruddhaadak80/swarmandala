@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "lalit",
+    "field": "thaat",
+    "current": "Marwa",
+    "suggested": "Poorvi",
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Lalit_(raga); https://tanarang.com/raag-lalit/",
+    "note": "Lalit uses both Ma, so it cannot belong to Marwa thaat, which has only tivra Ma. Wikipedia and Tanarang both classify it as Poorvi."
+  },
+  {
+    "slug": "lalit",
+    "field": "prahar",
+    "current": 1,
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://tanarang.com/raag-lalit/",
+    "note": "Tanarang gives the 4th prahar of the night, 3-6am, which straddles prahar 8 (1-4am) and prahar 1 (4-7am). The dataset's 1 is defensible for a pre-dawn raga; no change recommended."
+  },
+  {
+    "slug": "todi",
+    "field": "aroha",
+    "current": ["S", "r", "g", "M", "P", "d", "N", "S'"],
+    "suggested": ["S", "r", "g", "M", "d", "N", "S'"],
+    "confidence": "medium",
+    "source": "https://en.wikipedia.org/wiki/Todi_(raga); https://tanarang.com/raag-todi/",
+    "note": "Pa is generally skipped in the ascent; Tanarang says so in prose while its own table prints P. Pa remains in the avaroha and the pakad. Some gharanas keep it, hence medium rather than high."
+  },
+  {
+    "slug": "asavari",
+    "field": "vadi",
+    "current": "g",
+    "suggested": "d",
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Asavari",
+    "note": "Dha is vadi and Ga samvadi; the dataset has the pair reversed. Confirmed by the article infobox, body text, pakad emphasis, and Kanada-group teaching."
+  },
+  {
+    "slug": "asavari",
+    "field": "samvadi",
+    "current": "d",
+    "suggested": "g",
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Asavari",
+    "note": "Companion to the vadi fix. The pair must be swapped together."
+  },
+  {
+    "slug": "asavari",
+    "field": "aroha",
+    "current": ["S", "R", "g", "M", "P", "d", "n", "S'"],
+    "suggested": ["S", "R", "M", "P", "d", "S'"],
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Asavari",
+    "note": "Shuddha Asavari is audava in ascent (Ga and Ni varjya) and sampurna in descent. The dataset's seven-note ascent describes a different raga."
+  },
+  {
+    "slug": "asavari",
+    "field": "avaroha",
+    "current": ["S'", "n", "d", "P", "M", "g", "R", "S"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Asavari",
+    "note": "Sources give a vakra descent, S' n d P m P d m P g R S. The dataset's plain line is recognisable but drops the m P d m P turn. No forced replacement without a musical decision."
+  },
+  {
+    "slug": "bhimpalasi",
+    "field": "aroha",
+    "current": ["S", "g", "M", "P", "n", "S'"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Bhimpalasi",
+    "note": "Source ascents begin on lower Ni ('n S g M P n S'). The dataset notation has no prefix-octave marker, so the pickup cannot be written. Notation limit, not a musical error."
+  },
+  {
+    "slug": "multani",
+    "field": "prahar",
+    "current": 5,
+    "suggested": 4,
+    "confidence": "medium",
+    "source": "https://en.wikipedia.org/wiki/Multani_(raga); https://tanarang.com/raag-multani/",
+    "note": "Multani is a noon raga, 12-3pm, which is prahar 4 (13:00-16:00), not 5. Both sources agree on 12-3."
+  },
+  {
+    "slug": "multani",
+    "field": "aroha",
+    "current": ["S", "g", "M", "P", "N", "S'"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Multani_(raga)",
+    "note": "Source ascent begins on lower Ni ('N S g M P N S'). Notation cannot express the pickup. Separately, both sites' prose wrongly calls the Madhyam tivra; their notation uses shuddha Ma."
+  },
+  {
+    "slug": "hamsadhwani",
+    "field": "vadi",
+    "current": "G",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://tanarang.com/raag-hansdhwani/; https://en.wikipedia.org/wiki/Hamsadhvani",
+    "note": "Three published pairs: Sa-Pa (Tanarang and most teaching sites), Re-Pa (Bor via Wikipedia), Ga-Ni (the dataset). At least one teacher explicitly rejects Ga-Ni because it pulls the raga towards Shankara. Undecided; null is safer than another contested swap."
+  },
+  {
+    "slug": "hamsadhwani",
+    "field": "samvadi",
+    "current": "N",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://tanarang.com/raag-hansdhwani/; https://en.wikipedia.org/wiki/Hamsadhvani",
+    "note": "Companion to the vadi question. Pa is the constant in all the mainstream pairings, but the vadi is not settled, so the pair cannot be fixed."
+  },
+  {
+    "slug": "hamsadhwani",
+    "field": "prahar",
+    "current": 6,
+    "suggested": 7,
+    "confidence": "medium",
+    "source": "https://tanarang.com/raag-hansdhwani/",
+    "note": "Tanarang gives the 2nd prahar of the night, 9pm-12am, which maps to prahar 7 (22:00-01:00). Evening-opening practice supports 6, hence medium."
+  },
+  {
+    "slug": "darbari-kanada",
+    "field": "avaroha",
+    "current": ["S'", "n", "P", "d", "M", "P", "g", "M", "R", "S"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Darbari_Kanada",
+    "note": "Sources give a vakra descent, S' (n)d n P M P (M)g M R S. The dataset has S' n P d M P g M R S, losing the n-P cadence that identifies the raga. Plausible variant; undecided."
+  },
+  {
+    "slug": "bhairavi",
+    "field": "vadi",
+    "current": "M",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Bhairavi_(Hindustani); https://tanarang.com/raag-bhairavi/",
+    "note": "Ma is the common choice and Tanarang's; Wikipedia lists Ma/Pa as disputed. The dataset follows the mainstream reading; recorded as contested, not as an error."
+  },
+  {
+    "slug": "bhairavi",
+    "field": "prahar",
+    "current": 2,
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://tanarang.com/raag-bhairavi/",
+    "note": "Tanarang gives 1st prahar of the day (6-9am) or sarvakalik (any time); the raga is also the standard concert closer. Prahar 2 (7-10am) sits inside the morning window, so no change, but the field is inherently soft."
+  },
+  {
+    "slug": "desh",
+    "field": "prahar",
+    "current": 7,
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Desh_(raga)",
+    "note": "The source contradicts itself: infobox 12-3am (prahar 8), body text 9pm-12am (prahar 7). The dataset matches the body text. No change recommended."
+  },
+  {
+    "slug": "durga",
+    "field": "vadi",
+    "current": null,
+    "suggested": "M",
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Durga_(raga); https://tanarang.com/raag-durga/",
+    "note": "Ma vadi, Sa samvadi in Wikipedia, Tanarang and Sangeetapriya. One tutorial gives Dha, which is the outlier."
+  },
+  {
+    "slug": "durga",
+    "field": "samvadi",
+    "current": null,
+    "suggested": "S",
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Durga_(raga); https://tanarang.com/raag-durga/",
+    "note": "Companion to the vadi fill."
+  },
+  {
+    "slug": "durga",
+    "field": "prahar",
+    "current": 6,
+    "suggested": 7,
+    "confidence": "high",
+    "source": "https://en.wikipedia.org/wiki/Durga_(raga); https://tanarang.com/raag-durga/",
+    "note": "Durga is a second-prahar-of-night raga, 9pm-12am, i.e. prahar 7 (22:00-01:00)."
+  },
+  {
+    "slug": "miyan-ki-malhar",
+    "field": "vadi",
+    "current": "M",
+    "suggested": "P",
+    "confidence": "medium",
+    "source": "https://tanarang.com/raag-malhar-raag-miya-malhar/",
+    "note": "Tanarang gives Pancham vadi, Shadj samvadi. The dataset's Ma vadi is a common simplification but not the standard assignment."
+  },
+  {
+    "slug": "miyan-ki-malhar",
+    "field": "aroha",
+    "current": ["S", "R", "g", "M", "P", "D", "n", "S'"],
+    "suggested": ["S", "R", "g", "M", "P", "n", "D", "N", "S'"],
+    "confidence": "medium",
+    "source": "https://tanarang.com/raag-malhar-raag-miya-malhar/",
+    "note": "The raga uses both Nishads (Tanarang: 'Both Nishads'); the dataset has no shuddha Ni anywhere. Suggested array is a linear approximation of a vakra ascent."
+  },
+  {
+    "slug": "miyan-ki-malhar",
+    "field": "avaroha",
+    "current": ["S'", "n", "D", "P", "M", "g", "R", "S"],
+    "suggested": ["S'", "n", "D", "n", "P", "M", "g", "M", "R", "S"],
+    "confidence": "medium",
+    "source": "https://tanarang.com/raag-malhar-raag-miya-malhar/",
+    "note": "Shuddha Ni is missing from the descent. Tanarang says Dha is varjya in avaroh but its own notation includes D, so the source is internally inconsistent; the suggested line keeps D and adds the n-P turn."
+  },
+  {
+    "slug": "brindabani-sarang",
+    "field": "aroha",
+    "current": ["S", "R", "M", "P", "N", "S'"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Brindavani_Sarang",
+    "note": "Source ascent begins on lower Ni (N S R M P N S'). The notation cannot express a prefix-octave pickup. Notation limit, not a musical error."
+  },
+  {
+    "slug": "pilu",
+    "field": "vadi",
+    "current": null,
+    "suggested": "G",
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Pilu_(raga); https://tanarang.com/raag-pilu/",
+    "note": "Both sources give Ga vadi and Ni samvadi. Low confidence only because Pilu is light-classical and treated as time- and grammar-flexible."
+  },
+  {
+    "slug": "pilu",
+    "field": "samvadi",
+    "current": null,
+    "suggested": "N",
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Pilu_(raga); https://tanarang.com/raag-pilu/",
+    "note": "Companion to the vadi fill."
+  },
+  {
+    "slug": "pilu",
+    "field": "prahar",
+    "current": 6,
+    "suggested": 4,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Pilu_(raga); https://tanarang.com/raag-pilu/; https://chandrakantha.com/music-and-dance/i-class-music/index-of-rags/rag-pahadi",
+    "note": "Wikipedia and Tanarang give the third part of the day, 12-3pm (prahar 4). Chandrakantha lists Pilu as 'any time'. The dataset's 6 is defensible for an evening thumri; needs a product decision."
+  },
+  {
+    "slug": "pilu",
+    "field": "aroha",
+    "current": ["S", "R", "g", "M", "P", "D", "n", "S'"],
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Pilu_(raga)",
+    "note": "Pilu uses both Ga, both Dha and both Ni; the single-line Kafi ascent hides all three alternations. No single linear array is correct."
+  },
+  {
+    "slug": "pahadi",
+    "field": "vadi",
+    "current": null,
+    "suggested": "S",
+    "confidence": "low",
+    "source": "https://www.swarganga.org/raags/148/Pahadi; https://chandrakantha.com/music-and-dance/i-class-music/index-of-rags/rag-pahadi",
+    "note": "Majority reading is Sa vadi, Pa samvadi. Pa-Sa and Ga-Dha are also published. There is no Wikipedia raga article (Pahadi redirects to a disambiguation page), so the field is genuinely unsettled."
+  },
+  {
+    "slug": "pahadi",
+    "field": "samvadi",
+    "current": null,
+    "suggested": "P",
+    "confidence": "low",
+    "source": "https://www.swarganga.org/raags/148/Pahadi; https://chandrakantha.com/music-and-dance/i-class-music/index-of-rags/rag-pahadi",
+    "note": "Companion to the vadi fill; same uncertainty."
+  },
+  {
+    "slug": "ahir-bhairav",
+    "field": "vadi",
+    "current": "M",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Ahir_Bhairav",
+    "note": "The source contradicts itself: infobox gives Dha/Re, body text gives Ma/Sa. The dataset follows the body text, which is also the common teaching. Recorded, not corrected."
+  },
+  {
+    "slug": "ahir-bhairav",
+    "field": "samvadi",
+    "current": "S",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Ahir_Bhairav",
+    "note": "Companion to the vadi question."
+  },
+  {
+    "slug": "malkauns",
+    "field": "thaat",
+    "current": "Bhairavi",
+    "suggested": null,
+    "confidence": "low",
+    "source": "https://en.wikipedia.org/wiki/Malkauns",
+    "note": "Bhatkhande places Malkauns in Bhairavi thaat; some sources say Asavari. Bhairavi is the common choice and the dataset's value is fine. Recorded as a variant."
+  }
+]

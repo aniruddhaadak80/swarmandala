@@ -1,0 +1,56 @@
+flowchart TB
+  Push["Push or pull request"] --> Checkout["actions/checkout"]
+  Checkout --> Bun["Setup Bun and dependency cache"]
+
+  subgraph ci["ci.yml, verify job"]
+    Install["bun install --frozen-lockfile"]
+    Typecheck["bun run typecheck"]
+    Lint["bun run lint"]
+    Unit["bun run test with vitest"]
+    Build["bun run build"]
+    E2E["Playwright test after build"]
+  end
+
+  Bun --> Install
+  Install --> Typecheck
+  Install --> Lint
+  Install --> Unit
+  Install --> Build
+  Build --> E2E
+
+  subgraph gate["Merge gate"]
+    AllGreen{"All required steps green?"}
+  end
+
+  Typecheck --> AllGreen
+  Lint --> AllGreen
+  Unit --> AllGreen
+  Build --> AllGreen
+  E2E --> AllGreen
+
+  AllGreen -->|no| Blocked["Blocked, fix and push again"]
+  AllGreen -->|yes| Merge["Merge to main"]
+  Merge --> Main["Main branch updated"]
+
+  subgraph vercel["Vercel Git integration"]
+    Vercel["Build and deploy"]
+    Preview["Preview for the branch"]
+    Prod["Production from main"]
+    Vercel --> Preview
+    Vercel --> Prod
+  end
+
+  Push --> Vercel
+  Main --> Vercel
+  Manual["deploy-vercel.yml for a specific ref"] -.-> Prod
+
+  subgraph release["Release verification"]
+    Prod --> Health["GET /api/healthz"]
+    Health -->|healthy| Smoke["Playwright smoke on production"]
+    Health -->|unhealthy| Rollback["Promote the previous deployment"]
+    Smoke --> Live["Live"]
+  end
+
+  Main -.->|container fallback| Docker["Dockerfile and compose"]
+  Docker --> Fly["Fly.io deployment"]
+  Fly --> FlyHealth["Fly health check"]

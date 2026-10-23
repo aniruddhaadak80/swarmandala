@@ -1,0 +1,15 @@
+{
+  "name": "@repo/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./swara": "./src/swara.ts",
+    "./prahar": "./src/prahar.ts",
+    "./taal": "./src/taal.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

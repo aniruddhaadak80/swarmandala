@@ -1,0 +1,83 @@
+version: 2
+updates:
+  # Root workspace: apps/* and packages/*. Bun resolves the workspace, but the
+  # dependency graph is npm-shaped, so Dependabot reads it as npm.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    open-pull-requests-limit: 5
+    versioning-strategy: "increase"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+    groups:
+      next-react:
+        patterns:
+          - "next"
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      test-tooling:
+        patterns:
+          - "vitest"
+          - "@playwright/test"
+          - "@axe-core/playwright"
+      build-tooling:
+        patterns:
+          - "turbo"
+          - "typescript"
+          - "@biomejs/biome"
+          - "tailwindcss"
+          - "@tailwindcss/postcss"
+
+  # The FastAPI parity service. Read-only demo, but still worth patching.
+  - package-ecosystem: "pip"
+    directory: "/services/rasa"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:15"
+      timezone: "Asia/Kolkata"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "python"
+    groups:
+      python-stack:
+        patterns:
+          - "fastapi"
+          - "uvicorn"
+          - "httpx"
+          - "pytest"
+
+  # Workflow actions are code too; a stale action is a supply-chain risk.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:30"
+      timezone: "Asia/Kolkata"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "ci"
+    groups:
+      actions:
+        patterns:
+          - "*"

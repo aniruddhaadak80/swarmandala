@@ -1,0 +1,78 @@
+erDiagram
+  THAAT ||--o{ RAGA : groups
+  PRAHAR ||--o{ RAGA : anchors
+  SEASON |o--o{ RAGA : colours
+  SWARA |o--o{ RAGA : leads
+  SWARA |o--o{ RAGA : answers
+
+  RASA ||--o{ RAGA_RASA : names
+  RAGA ||--o{ RAGA_RASA : carries
+  RAGA ||--o{ RAGA_SWARA : spells
+  SWARA ||--o{ RAGA_SWARA : appears
+  RAGA ||--o{ PAKAD_NOTE : phrases
+  SWARA ||--o{ PAKAD_NOTE : voices
+
+  RAGA {
+    string slug PK
+    string name
+    string devanagari
+    int prahar_number FK
+    string thaat_name FK
+    string vadi FK
+    string samvadi FK
+    string season FK
+    string mood
+    string description
+  }
+
+  THAAT {
+    string name PK
+    string scale "seven swara positions"
+  }
+
+  PRAHAR {
+    int number PK
+    string name
+    string english
+    int start_hour
+    int end_hour
+  }
+
+  SWARA {
+    string symbol PK
+    int semitones
+    string label
+    string devanagari
+  }
+
+  RAGA_SWARA {
+    string raga_slug FK
+    string swara_symbol FK
+    string direction "aroha or avaroha"
+    int position
+    int octave
+  }
+
+  PAKAD_NOTE {
+    string raga_slug FK
+    int position
+    string swara_symbol FK
+    int octave
+  }
+
+  RASA {
+    string id PK
+    string english
+    string devanagari
+  }
+
+  RAGA_RASA {
+    string raga_slug FK
+    string rasa_id FK
+    int position
+  }
+
+  SEASON {
+    string id PK
+    string months
+  }

@@ -1,0 +1,85 @@
+name: Feature request
+description: Propose a new view, interaction, or piece of the atlas. Start with the problem.
+title: "[feat]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Swarmandala stays deliberately small: no accounts, no database, no API keys, and audio
+        synthesised in the browser. A proposal that fits those constraints is much easier to accept.
+        If you are unsure whether it does, open a Discussion first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation, not the implementation. Who is stuck, and where?
+      placeholder: "When I am comparing two ragas, I lose my place as soon as I scroll, so I cannot tell which scale is on the left."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+      description: The behaviour you want. A sketch, a route name, or a rough interaction is enough.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+      description: Existing workarounds, other sites, or a simpler version of the idea.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Atlas and raga pages
+        - Prahar clock
+        - Audio and tanpura (Web Audio)
+        - Search, filters, and compare
+        - Localisation (en / hi / bn)
+        - Accessibility
+        - Developer experience and CI
+        - Rasa parity service (services/rasa)
+        - Documentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: constraints
+    attributes:
+      label: Does this need something the project currently avoids?
+      description: Be honest here; it saves a review round trip.
+      options:
+        - No — it works with the current zero-key, client-side design
+        - It needs a new dependency
+        - It needs a server, database, or API key
+        - It needs audio samples or a third-party media host
+        - I am not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: musical-context
+    attributes:
+      label: Musical or scholarly context
+      description: If the request depends on a convention (a prahar boundary, a gharana's practice), name a source. Otherwise leave this blank.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and Discussions for this idea.
+          required: true
+        - label: I am willing to open a pull request if a maintainer agrees on the approach.
+          required: false

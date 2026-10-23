@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>Swarmandala</title>
+  <desc>A simplified swara mandala: bone ring, marigold sun, Sa at the top.</desc>
+
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="14" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.14" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="23" stroke="#F4EBDD" stroke-opacity="0.46" stroke-width="1.6"/>
+
+  <!-- eight positions, simplified for 16px -->
+  <circle cx="32" cy="9" r="3.8" fill="#F4EBDD"/>
+  <circle cx="48.26" cy="15.74" r="1.7" fill="#F4EBDD" fill-opacity="0.4"/>
+  <circle cx="55" cy="32" r="2.3" fill="#E8A33D"/>
+  <circle cx="48.26" cy="48.26" r="1.7" fill="#F4EBDD" fill-opacity="0.4"/>
+  <circle cx="32" cy="55" r="2.3" fill="#E8A33D"/>
+  <circle cx="15.74" cy="48.26" r="1.7" fill="#F4EBDD" fill-opacity="0.4"/>
+  <circle cx="9" cy="32" r="2.3" fill="#E8A33D"/>
+  <circle cx="15.74" cy="15.74" r="1.7" fill="#F4EBDD" fill-opacity="0.4"/>
+
+  <circle cx="32" cy="32" r="10.5" fill="#E8A33D"/>
+  <circle cx="32" cy="32" r="10.5" stroke="#0E0C0A" stroke-opacity="0.10"/>
+</svg>

@@ -1,0 +1,102 @@
+flowchart TB
+  subgraph client["Browser runtime"]
+    Listener["Listener"]
+    UIs["Atlas, clock, compare, and practice UI"]
+    Mandala["SVG scale mandala"]
+    Engine["AudioEngine over Web Audio"]
+  end
+
+  subgraph edge["Vercel edge"]
+    Router["App Router and RSC cache"]
+    Cache["Static asset cache"]
+    Headers["Security headers"]
+    OGCard["/og social card"]
+  end
+
+  subgraph web["apps/web, Next.js 15 App Router"]
+    Pages["Routes: /, /atlas, /raga/[slug], /clock, /compare, /practice"]
+    RecommendAPI["/api/recommend"]
+    HealthAPI["/api/healthz"]
+  end
+
+  subgraph core["packages/core, pure TypeScript"]
+    Swara["swara notation"]
+    Prahar["prahar clock maths"]
+    Taal["taal cycles"]
+    RagaModel["Raga model and comparison"]
+    Ranking["recommendRagas"]
+    AudioMath["audio maths"]
+  end
+
+  subgraph seed["packages/seed"]
+    Dataset["RAGAS, 24 typed entries"]
+    Validate["validateRagas"]
+  end
+
+  subgraph ui["packages/ui"]
+    Primitives["React primitives"]
+  end
+
+  subgraph rasa["services/rasa, reference only"]
+    RasaService["FastAPI parity service"]
+    ParityTests["pytest scoring checks"]
+  end
+
+  subgraph delivery["Delivery and operations"]
+    Actions["GitHub Actions"]
+    Vercel["Vercel production"]
+    DockerImage["Docker image"]
+    FlyApp["Fly.io fallback"]
+  end
+
+  Listener --> Router
+  Listener --> Engine
+  Router --> Cache
+  Router --> Headers
+  Router --> Pages
+  Router --> RecommendAPI
+  Router --> HealthAPI
+  Router --> OGCard
+
+  Pages --> UIs
+  Pages --> Mandala
+  Pages --> Primitives
+  Pages --> RagaModel
+  Pages --> Dataset
+  Pages --> Prahar
+  Pages --> Taal
+  Pages --> Ranking
+  UIs --> Engine
+  Engine --> AudioMath
+  Engine --> Taal
+
+  RecommendAPI --> Ranking
+  Ranking --> Prahar
+  Ranking --> Dataset
+  HealthAPI --> Dataset
+  OGCard --> RagaModel
+
+  Dataset --> Validate
+  Validate --> RagaModel
+  RagaModel --> Swara
+  RagaModel --> Prahar
+  AudioMath --> Swara
+  AudioMath --> Taal
+
+  RasaService -.same scoring contract and rank order.-> Ranking
+  ParityTests --> RasaService
+  Actions --> Validate
+  Actions -.gates merge.-> Vercel
+  Vercel --> Router
+  DockerImage --> FlyApp
+
+  classDef browser fill:#f7efe2,stroke:#9a6b3f,color:#2b2118
+  classDef app fill:#fff7e8,stroke:#b7791f,color:#2b2118
+  classDef domain fill:#f3ead6,stroke:#6b4f2a,color:#2b2118
+  classDef data fill:#efe5cf,stroke:#7c5c34,color:#2b2118
+  classDef ops fill:#e8e2d4,stroke:#4b5563,color:#1f2937
+  class Listener,UIs,Mandala,Engine browser
+  class Router,Cache,Headers,OGCard,Pages,RecommendAPI,HealthAPI app
+  class Swara,Prahar,Taal,RagaModel,Ranking,AudioMath,RasaService,ParityTests domain
+  class Dataset,Validate,Primitives data
+  class Actions,Vercel,DockerImage,FlyApp ops

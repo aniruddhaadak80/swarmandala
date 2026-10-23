@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question in Discussions
+    url: https://github.com/aniruddhaadak/swarmandala/discussions
+    about: Setup help, "which raga is this", and open-ended musical discussion. Please do not open an issue for a question.
+  - name: Report a security vulnerability privately
+    url: https://github.com/aniruddhaadak/swarmandala/security/advisories/new
+    about: Never open a public issue for a vulnerability. See SECURITY.md for scope and response times.

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <title>Swarmandala — practice room</title>
+  <desc>Practice screen: tanpura controls, a sixteen-beat teentaal grid, and a swara keyboard.</desc>
+
+  <defs>
+    <radialGradient id="practiceGlow" cx="640" cy="120" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A33D" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#E8A33D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="#0E0C0A"/>
+  <rect width="1440" height="620" fill="url(#practiceGlow)"/>
+
+  <!-- top navigation -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(80 36)">
+      <circle r="11.5" stroke="#F4EBDD" stroke-opacity="0.38"/>
+      <circle r="4.4" fill="#E8A33D"/>
+      <circle cy="-11.5" r="1.6" fill="#F4EBDD"/>
+      <circle cx="8.1" cy="8.1" r="1.6" fill="#E8A33D"/>
+      <circle cx="-8.1" cy="8.1" r="1.6" fill="#F4EBDD" fill-opacity="0.5"/>
+      <circle cx="11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+      <circle cx="-11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+    </g>
+    <text x="103" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#F4EBDD">swarmandala</text>
+    <g font-size="11.5" letter-spacing="1.15" fill="#B9AB97">
+      <text x="596" y="46">Atlas</text>
+      <text x="672" y="46">Prahar clock</text>
+      <text x="796" y="46">Compare</text>
+      <text x="892" y="46" fill="#F4EBDD">Practice</text>
+      <text x="986" y="46">About</text>
+    </g>
+    <line x1="892" y1="55" x2="946" y2="55" stroke="#E8A33D" stroke-opacity="0.8"/>
+    <rect x="1214" y="22" width="146" height="28" rx="14" stroke="#F4EBDD" stroke-opacity="0.16"/>
+    <text x="1287" y="40" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B9AB97">19:24<tspan fill="#B9AB97" fill-opacity="0.5"> · </tspan><tspan fill="#E8A33D">YAMAN</tspan></text>
+  </g>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#F4EBDD" stroke-opacity="0.16"/>
+
+  <!-- page head -->
+  <text x="80" y="116" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="2.5" fill="#E8A33D">PRACTICE ROOM</text>
+  <text x="80" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#F4EBDD">Practice room</text>
+  <text x="80" y="198" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#B9AB97">A drone, a theka, and nothing else. Set the tempo; the sam will find you.</text>
+  <text x="1360" y="170" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.8" fill="#B9AB97">SESSION 04 · 00:12:48</text>
+
+  <!-- left panel: tanpura and tempo -->
+  <rect x="80" y="252" width="360" height="500" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.13"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="104" y="280" font-size="9" letter-spacing="2.2" fill="#E8A33D">TANPURA</text>
+    <text x="416" y="280" text-anchor="end" font-size="8" letter-spacing="1.5" fill="#B9AB97">DRONE</text>
+
+    <text x="104" y="316" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#F4EBDD">Sa — C3</text>
+    <text x="104" y="348" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#F4EBDD">Pa — G3</text>
+    <text x="104" y="370" font-size="8" letter-spacing="1.4" fill="#B9AB97">JUST INTONATION · 440 HZ</text>
+    <line x1="104" y1="388" x2="416" y2="388" stroke="#F4EBDD" stroke-opacity="0.12"/>
+
+    <text x="104" y="412" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">VOLUME</text>
+    <text x="416" y="412" text-anchor="end" font-size="8.5" fill="#B9AB97">60%</text>
+    <line x1="104" y1="432" x2="416" y2="432" stroke="#F4EBDD" stroke-opacity="0.14"/>
+    <line x1="104" y1="432" x2="291" y2="432" stroke="#E8A33D" stroke-opacity="0.8"/>
+    <circle cx="291" cy="432" r="5.5" fill="#E8A33D"/>
+    <line x1="104" y1="452" x2="416" y2="452" stroke="#F4EBDD" stroke-opacity="0.12"/>
+
+    <text x="104" y="478" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">TAAL</text>
+    <text x="104" y="508" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#F4EBDD">Teentaal</text>
+    <text x="104" y="526" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="9.5" fill="#B9AB97">तीनताल</text>
+    <text x="158" y="526" font-size="8.5" letter-spacing="1.1" fill="#B9AB97">· 16 MATRAS · 4 VIBHAGS</text>
+    <line x1="104" y1="546" x2="416" y2="546" stroke="#F4EBDD" stroke-opacity="0.12"/>
+
+    <text x="104" y="572" font-size="8.5" letter-spacing="1.6" fill="#B9AB97">TEMPO</text>
+    <text x="104" y="628" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#F4EBDD">84</text>
+    <text x="180" y="628" font-size="9" letter-spacing="1.4" fill="#B9AB97">BPM</text>
+
+    <circle cx="360" cy="608" r="14" stroke="#F4EBDD" stroke-opacity="0.22"/>
+    <text x="360" y="613" text-anchor="middle" font-size="13" fill="#B9AB97">−</text>
+    <circle cx="400" cy="608" r="14" stroke="#F4EBDD" stroke-opacity="0.22"/>
+    <text x="400" y="613" text-anchor="middle" font-size="13" fill="#B9AB97">+</text>
+
+    <rect x="104" y="660" width="312" height="46" rx="23" fill="#E8A33D"/>
+    <path d="M202 675 L212 683 L202 691 Z" fill="#0E0C0A"/>
+    <text x="256" y="688" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#0E0C0A">BEGIN · SPACE</text>
+    <text x="104" y="736" font-size="8" letter-spacing="1.4" fill="#B9AB97" fill-opacity="0.6">NO METRONOME SAMPLES · OSCILLATORS ONLY</text>
+  </g>
+
+  <!-- teentaal -->
+  <text x="480" y="272" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#F4EBDD">Teentaal</text>
+  <text x="616" y="267" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="14" fill="#B9AB97">तीनताल</text>
+  <text x="1360" y="270" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.6" fill="#B9AB97">16 MATRAS · 4 VIBHAGS</text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="8" letter-spacing="1.3">
+    <text x="480" y="306" fill="#E8A33D">VIBHAG 1 · SAM</text>
+    <text x="703" y="306" fill="#B9AB97">VIBHAG 2 · TALI</text>
+    <text x="926" y="306" fill="#3E6B63">VIBHAG 3 · KHALI</text>
+    <text x="1149" y="306" fill="#B9AB97">VIBHAG 4 · TALI</text>
+  </g>
+
+  <!-- sixteen beats -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <!-- vibhag 1 -->
+    <g>
+      <rect x="480" y="322" width="47" height="90" fill="#E8A33D"/>
+      <text x="488" y="340" font-size="8" fill="#0E0C0A" fill-opacity="0.55">1</text>
+      <text x="503.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#0E0C0A">Dha</text>
+      <rect x="532" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="540" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">2</text>
+      <text x="555.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="584" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="592" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">3</text>
+      <text x="607.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="636" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="644" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">4</text>
+      <text x="659.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dha</text>
+    </g>
+    <!-- vibhag 2 -->
+    <g>
+      <rect x="703" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="711" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">5</text>
+      <text x="726.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dha</text>
+      <rect x="755" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="763" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">6</text>
+      <text x="778.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="807" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="815" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">7</text>
+      <text x="830.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="859" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="867" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">8</text>
+      <text x="882.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dha</text>
+    </g>
+    <!-- vibhag 3, khali -->
+    <g>
+      <rect x="926" y="322" width="47" height="90" fill="#3E6B63" fill-opacity="0.13"/>
+      <text x="934" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.6">9</text>
+      <circle cx="961" cy="336" r="2.6" stroke="#3E6B63" stroke-opacity="0.9"/>
+      <text x="949.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dha</text>
+      <rect x="978" y="322" width="47" height="90" fill="#3E6B63" fill-opacity="0.13"/>
+      <text x="986" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.6">10</text>
+      <text x="1001.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Tin</text>
+      <rect x="1030" y="322" width="47" height="90" fill="#3E6B63" fill-opacity="0.22" stroke="#3E6B63" stroke-width="1.5"/>
+      <text x="1038" y="340" font-size="8" fill="#F4EBDD" fill-opacity="0.7">11</text>
+      <circle cx="1065" cy="336" r="2.6" fill="#3E6B63"/>
+      <text x="1053.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Tin</text>
+      <rect x="1082" y="322" width="47" height="90" fill="#3E6B63" fill-opacity="0.13"/>
+      <text x="1090" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.6">12</text>
+      <text x="1105.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Ta</text>
+    </g>
+    <!-- vibhag 4 -->
+    <g>
+      <rect x="1149" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1157" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">13</text>
+      <text x="1172.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Ta</text>
+      <rect x="1201" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1209" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">14</text>
+      <text x="1224.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="1253" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1261" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">15</text>
+      <text x="1276.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dhin</text>
+      <rect x="1305" y="322" width="47" height="90" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1313" y="340" font-size="8" fill="#B9AB97" fill-opacity="0.5">16</text>
+      <text x="1328.5" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#F4EBDD">Dha</text>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="480" y="438" font-size="9.5" letter-spacing="1.6" fill="#B9AB97">MATRA 11 · KHALI VIBHAG · 5 BEATS TO SAM</text>
+    <text x="1360" y="438" text-anchor="end" font-size="8.5" letter-spacing="1.4" fill="#B9AB97" fill-opacity="0.65">CYCLE 3 · 00:12:48</text>
+  </g>
+  <line x1="480" y1="454" x2="1360" y2="454" stroke="#F4EBDD" stroke-opacity="0.14"/>
+
+  <!-- swara keyboard -->
+  <text x="480" y="482" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.1" fill="#B9AB97">SWARA · TAP TO SOUND</text>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="19">
+    <rect x="480" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+    <text x="510" y="530" text-anchor="middle" fill="#E8A33D">S</text>
+
+    <rect x="546" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.35"/>
+    <text x="576" y="530" text-anchor="middle" fill="#C94F35">r</text>
+
+    <rect x="612" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="642" y="530" text-anchor="middle" fill="#F4EBDD">R</text>
+
+    <rect x="678" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.35"/>
+    <text x="708" y="530" text-anchor="middle" fill="#C94F35">g</text>
+
+    <rect x="744" y="496" width="60" height="54" rx="2" fill="#E8A33D" fill-opacity="0.1" stroke="#E8A33D"/>
+    <text x="774" y="530" text-anchor="middle" fill="#E8A33D">G</text>
+
+    <rect x="810" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="840" y="530" text-anchor="middle" fill="#F4EBDD">M</text>
+
+    <rect x="876" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="906" y="530" text-anchor="middle" fill="#F4EBDD">M^</text>
+
+    <rect x="942" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="972" y="530" text-anchor="middle" fill="#F4EBDD">P</text>
+
+    <rect x="1008" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.35"/>
+    <text x="1038" y="530" text-anchor="middle" fill="#C94F35">d</text>
+
+    <rect x="1074" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="1104" y="530" text-anchor="middle" fill="#F4EBDD">D</text>
+
+    <rect x="1140" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.35"/>
+    <text x="1170" y="530" text-anchor="middle" fill="#C94F35">n</text>
+
+    <rect x="1206" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="1236" y="530" text-anchor="middle" fill="#F4EBDD">N</text>
+
+    <rect x="1272" y="496" width="60" height="54" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+    <text x="1302" y="530" text-anchor="middle" fill="#E8A33D">S'</text>
+  </g>
+  <text x="480" y="572" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.4" fill="#B9AB97" fill-opacity="0.75">TAP A SWARA TO PLAY IT OVER THE DRONE.</text>
+
+  <!-- tanpura envelope -->
+  <rect x="480" y="590" width="880" height="150" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="500" y="614" font-size="8.5" letter-spacing="1.8" fill="#B9AB97">TANPURA · SA–PA · PLUCK ENVELOPE</text>
+    <text x="1340" y="614" text-anchor="end" font-size="8.5" letter-spacing="1.4" fill="#B9AB97" fill-opacity="0.6">4 STRINGS · 1 CYCLE</text>
+  </g>
+  <line x1="500" y1="690" x2="1340" y2="690" stroke="#F4EBDD" stroke-opacity="0.12"/>
+  <g fill="#E8A33D" fill-opacity="0.55">
+    <rect x="500" y="644" width="3" height="46" rx="1.5"/>
+    <rect x="520" y="651" width="3" height="39" rx="1.5"/>
+    <rect x="540" y="657" width="3" height="33" rx="1.5"/>
+    <rect x="560" y="663" width="3" height="27" rx="1.5"/>
+    <rect x="580" y="668" width="3" height="22" rx="1.5"/>
+    <rect x="600" y="672" width="3" height="18" rx="1.5"/>
+    <rect x="620" y="676" width="3" height="14" rx="1.5"/>
+    <rect x="640" y="679" width="3" height="11" rx="1.5"/>
+    <rect x="660" y="682" width="3" height="8" rx="1.5"/>
+    <rect x="680" y="685" width="3" height="5" rx="1.5"/>
+
+    <rect x="700" y="644" width="3" height="46" rx="1.5"/>
+    <rect x="720" y="651" width="3" height="39" rx="1.5"/>
+    <rect x="740" y="657" width="3" height="33" rx="1.5"/>
+    <rect x="760" y="663" width="3" height="27" rx="1.5"/>
+    <rect x="780" y="668" width="3" height="22" rx="1.5"/>
+    <rect x="800" y="672" width="3" height="18" rx="1.5"/>
+    <rect x="820" y="676" width="3" height="14" rx="1.5"/>
+    <rect x="840" y="679" width="3" height="11" rx="1.5"/>
+    <rect x="860" y="682" width="3" height="8" rx="1.5"/>
+    <rect x="880" y="685" width="3" height="5" rx="1.5"/>
+
+    <rect x="900" y="644" width="3" height="46" rx="1.5"/>
+    <rect x="920" y="651" width="3" height="39" rx="1.5"/>
+    <rect x="940" y="657" width="3" height="33" rx="1.5"/>
+    <rect x="960" y="663" width="3" height="27" rx="1.5"/>
+    <rect x="980" y="668" width="3" height="22" rx="1.5"/>
+    <rect x="1000" y="672" width="3" height="18" rx="1.5"/>
+    <rect x="1020" y="676" width="3" height="14" rx="1.5"/>
+    <rect x="1040" y="679" width="3" height="11" rx="1.5"/>
+    <rect x="1060" y="682" width="3" height="8" rx="1.5"/>
+    <rect x="1080" y="685" width="3" height="5" rx="1.5"/>
+
+    <rect x="1100" y="644" width="3" height="46" rx="1.5"/>
+    <rect x="1120" y="651" width="3" height="39" rx="1.5"/>
+    <rect x="1140" y="657" width="3" height="33" rx="1.5"/>
+    <rect x="1160" y="663" width="3" height="27" rx="1.5"/>
+    <rect x="1180" y="668" width="3" height="22" rx="1.5"/>
+    <rect x="1200" y="672" width="3" height="18" rx="1.5"/>
+    <rect x="1220" y="676" width="3" height="14" rx="1.5"/>
+    <rect x="1240" y="679" width="3" height="11" rx="1.5"/>
+    <rect x="1260" y="682" width="3" height="8" rx="1.5"/>
+    <rect x="1280" y="685" width="3" height="5" rx="1.5"/>
+  </g>
+  <line x1="996" y1="606" x2="996" y2="700" stroke="#C94F35" stroke-opacity="0.35" stroke-dasharray="2 5"/>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.5" fill="#B9AB97">
+    <text x="500" y="722">TODAY — 42 MIN</text>
+    <text x="640" y="722">SESSIONS — 6</text>
+    <text x="760" y="722">STREAK — 9 DAYS</text>
+    <text x="1340" y="722" text-anchor="end" fill="#3E6B63">TEMPO LOCKED · 84 BPM</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="80" y1="832" x2="1360" y2="832" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.8" fill="#B9AB97" fill-opacity="0.7">
+    <text x="80" y="856">SWARMANDALA · BUILT IN KOLKATA</text>
+    <text x="1360" y="856" text-anchor="end">PRACTICE — 05 / 06</text>
+  </g>
+</svg>

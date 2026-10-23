@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <title>Swarmandala — compare Yaman and Bhupali</title>
+  <desc>Compare screen: two overlapping twelve-note circles, shared pitch classes, and a similarity score.</desc>
+
+  <defs>
+    <radialGradient id="compareGlow" cx="760" cy="120" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A33D" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#E8A33D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="#0E0C0A"/>
+  <rect width="1440" height="620" fill="url(#compareGlow)"/>
+
+  <!-- top navigation -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(80 36)">
+      <circle r="11.5" stroke="#F4EBDD" stroke-opacity="0.38"/>
+      <circle r="4.4" fill="#E8A33D"/>
+      <circle cy="-11.5" r="1.6" fill="#F4EBDD"/>
+      <circle cx="8.1" cy="8.1" r="1.6" fill="#E8A33D"/>
+      <circle cx="-8.1" cy="8.1" r="1.6" fill="#F4EBDD" fill-opacity="0.5"/>
+      <circle cx="11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+      <circle cx="-11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+    </g>
+    <text x="103" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#F4EBDD">swarmandala</text>
+    <g font-size="11.5" letter-spacing="1.15" fill="#B9AB97">
+      <text x="596" y="46">Atlas</text>
+      <text x="672" y="46">Prahar clock</text>
+      <text x="796" y="46" fill="#F4EBDD">Compare</text>
+      <text x="892" y="46">Practice</text>
+      <text x="986" y="46">About</text>
+    </g>
+    <line x1="796" y1="55" x2="852" y2="55" stroke="#E8A33D" stroke-opacity="0.8"/>
+    <rect x="1214" y="22" width="146" height="28" rx="14" stroke="#F4EBDD" stroke-opacity="0.16"/>
+    <text x="1287" y="40" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B9AB97">19:24<tspan fill="#B9AB97" fill-opacity="0.5"> · </tspan><tspan fill="#E8A33D">YAMAN</tspan></text>
+  </g>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#F4EBDD" stroke-opacity="0.16"/>
+
+  <!-- page head -->
+  <text x="80" y="116" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="2.5" fill="#E8A33D">COMPARE</text>
+  <text x="80" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#F4EBDD">Two ragas, one circle</text>
+  <text x="80" y="198" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#B9AB97">Pick two ragas and see which notes they share. Similarity is the overlap of their pitch-class sets.</text>
+
+  <!-- selectors -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="80" y="240" width="400" height="64" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.3"/>
+    <circle cx="102" cy="260" r="4.5" stroke="#E8A33D"/>
+    <text x="118" y="264" font-size="8" letter-spacing="1.6" fill="#B9AB97">FIRST RAGA · KALYAN</text>
+    <text x="102" y="294" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#F4EBDD">Yaman</text>
+    <text x="456" y="292" text-anchor="end" font-size="8.5" letter-spacing="1.4" fill="#B9AB97">7 NOTES</text>
+
+    <rect x="500" y="240" width="400" height="64" rx="2" fill="#171310" stroke="#3E6B63" stroke-opacity="0.55"/>
+    <circle cx="522" cy="260" r="4.5" stroke="#3E6B63"/>
+    <text x="538" y="264" font-size="8" letter-spacing="1.6" fill="#B9AB97">SECOND RAGA · KALYAN</text>
+    <text x="522" y="294" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#F4EBDD">Bhupali</text>
+    <text x="876" y="292" text-anchor="end" font-size="8.5" letter-spacing="1.4" fill="#B9AB97">5 NOTES</text>
+  </g>
+
+  <!-- two overlapping circles -->
+  <circle cx="320" cy="570" r="205" fill="#E8A33D" fill-opacity="0.015" stroke="#E8A33D" stroke-opacity="0.32"/>
+  <circle cx="640" cy="570" r="205" fill="#3E6B63" fill-opacity="0.02" stroke="#3E6B63" stroke-opacity="0.45"/>
+
+  <!-- note nodes, twelve chromatic positions each -->
+  <g fill="#F4EBDD">
+    <circle cx="320" cy="365" r="3.2"/>
+    <circle cx="497.54" cy="467.5" r="3.2"/>
+    <circle cx="497.54" cy="672.5" r="3.2"/>
+    <circle cx="217.5" cy="747.54" r="3.2"/>
+    <circle cx="115" cy="570" r="3.2"/>
+    <circle cx="640" cy="365" r="3.2"/>
+    <circle cx="817.54" cy="467.5" r="3.2"/>
+    <circle cx="817.54" cy="672.5" r="3.2"/>
+    <circle cx="537.5" cy="747.54" r="3.2"/>
+    <circle cx="435" cy="570" r="3.2"/>
+  </g>
+  <g fill="#E8A33D">
+    <circle cx="320" cy="775" r="4"/>
+    <circle cx="217.5" cy="392.46" r="4"/>
+  </g>
+  <g fill="none" stroke="#F4EBDD" stroke-opacity="0.14">
+    <circle cx="422.5" cy="392.46" r="2"/>
+    <circle cx="525" cy="570" r="2"/>
+    <circle cx="422.5" cy="747.54" r="2"/>
+    <circle cx="142.46" cy="672.5" r="2"/>
+    <circle cx="142.46" cy="467.5" r="2"/>
+    <circle cx="537.5" cy="392.46" r="2"/>
+    <circle cx="742.5" cy="392.46" r="2"/>
+    <circle cx="742.5" cy="570" r="2"/>
+    <circle cx="742.5" cy="747.54" r="2"/>
+    <circle cx="640" cy="775" r="2"/>
+    <circle cx="462.46" cy="672.5" r="2"/>
+    <circle cx="462.46" cy="467.5" r="2"/>
+  </g>
+
+  <!-- active note labels -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="11" text-anchor="middle" fill="#F4EBDD">
+    <text x="320" y="343">S</text>
+    <text x="516.6" y="456.5">R</text>
+    <text x="516.6" y="683.5">G</text>
+    <text x="320" y="797" fill="#E8A33D">M^</text>
+    <text x="206.5" y="766.6">P</text>
+    <text x="93" y="570">D</text>
+    <text x="206.5" y="373.4" fill="#E8A33D">N</text>
+
+    <text x="640" y="343">S</text>
+    <text x="836.6" y="456.5">R</text>
+    <text x="836.6" y="683.5">G</text>
+    <text x="526.5" y="766.6">P</text>
+    <text x="413" y="570">D</text>
+  </g>
+
+  <text x="480" y="574" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="8.5" letter-spacing="2" fill="#B9AB97">SHARED · 5</text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="320" y="560" font-size="9" letter-spacing="2.4" fill="#E8A33D">YAMAN</text>
+    <text x="320" y="578" font-size="8" letter-spacing="1.4" fill="#B9AB97">7 NOTES</text>
+    <text x="640" y="560" font-size="9" letter-spacing="2.4" fill="#3E6B63">BHUPALI</text>
+    <text x="640" y="578" font-size="8" letter-spacing="1.4" fill="#B9AB97">5 NOTES</text>
+  </g>
+
+  <line x1="910" y1="240" x2="910" y2="812" stroke="#F4EBDD" stroke-opacity="0.12"/>
+
+  <!-- similarity -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="940" y="248" font-size="9" letter-spacing="2.2" fill="#B9AB97">SIMILARITY</text>
+    <text x="940" y="316" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#F4EBDD">71%</text>
+    <text x="1072" y="316" font-size="9" letter-spacing="1.4" fill="#B9AB97">/ 100</text>
+    <rect x="940" y="332" width="420" height="4" fill="#F4EBDD" fill-opacity="0.12"/>
+    <rect x="940" y="332" width="298" height="4" fill="#E8A33D"/>
+    <text x="940" y="356" font-size="8.5" letter-spacing="1.5" fill="#B9AB97">5 OF 7 PITCH CLASSES SHARED</text>
+
+    <circle cx="944" cy="382" r="3" fill="#3E6B63"/>
+    <text x="956" y="386" font-size="9" letter-spacing="1.5" fill="#B9AB97">SAME THAAT · KALYAN</text>
+    <line x1="940" y1="408" x2="1360" y2="408" stroke="#F4EBDD" stroke-opacity="0.14"/>
+
+    <text x="940" y="438" font-size="8.5" letter-spacing="1.8" fill="#B9AB97">SHARED · 5</text>
+    <g font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="middle" fill="#F4EBDD">
+      <rect x="940" y="452" width="54" height="34" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.16"/>
+      <text x="967" y="474">S</text>
+      <rect x="1002" y="452" width="54" height="34" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.16"/>
+      <text x="1029" y="474">R</text>
+      <rect x="1064" y="452" width="54" height="34" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.16"/>
+      <text x="1091" y="474">G</text>
+      <rect x="1126" y="452" width="54" height="34" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.16"/>
+      <text x="1153" y="474">P</text>
+      <rect x="1188" y="452" width="54" height="34" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.16"/>
+      <text x="1215" y="474">D</text>
+    </g>
+
+    <text x="940" y="520" font-size="8.5" letter-spacing="1.8" fill="#B9AB97">ONLY YAMAN · 2</text>
+    <g font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="middle" fill="#E8A33D">
+      <rect x="940" y="534" width="54" height="34" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.4"/>
+      <text x="967" y="556">M^</text>
+      <rect x="1002" y="534" width="54" height="34" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.4"/>
+      <text x="1029" y="556">N</text>
+    </g>
+
+    <text x="940" y="602" font-size="8.5" letter-spacing="1.8" fill="#B9AB97">ONLY BHUPALI · 0</text>
+    <text x="940" y="624" font-size="11" fill="#B9AB97">None — every note of Bhupali is in Yaman.</text>
+  </g>
+
+  <!-- quote -->
+  <line x1="940" y1="658" x2="940" y2="738" stroke="#E8A33D" stroke-opacity="0.55"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#F4EBDD">
+    <text x="958" y="680">Bhupali is a pentatonic subset of Yaman:</text>
+    <text x="958" y="702">same thaat, different weather. One leaves</text>
+    <text x="958" y="724">out Ma and Ni, and the evening loosens.</text>
+  </g>
+
+  <rect x="940" y="770" width="190" height="42" rx="21" fill="#E8A33D"/>
+  <text x="1035" y="796" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="1.4" fill="#0E0C0A">HEAR YAMAN</text>
+  <rect x="1150" y="770" width="190" height="42" rx="21" stroke="#3E6B63" stroke-opacity="0.7"/>
+  <text x="1245" y="796" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="1.4" fill="#F4EBDD">HEAR BHUPALI</text>
+
+  <!-- footer -->
+  <line x1="80" y1="832" x2="1360" y2="832" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.8" fill="#B9AB97" fill-opacity="0.7">
+    <text x="80" y="856">SWARMANDALA · BUILT IN KOLKATA</text>
+    <text x="1360" y="856" text-anchor="end">COMPARE — 06 / 06</text>
+  </g>
+</svg>

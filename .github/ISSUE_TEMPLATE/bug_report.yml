@@ -1,0 +1,111 @@
+name: Bug report
+description: Something is broken — a page, the tanpura, a filter, the build, or the parity service.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file this. Please search open and closed issues first.
+
+        **Not this form:** raga content corrections belong in the **Raga correction** form, and
+        security problems go through [SECURITY.md](https://github.com/aniruddhaadak/swarmandala/blob/main/SECURITY.md)
+        instead of a public issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: One or two sentences. Include the route or raga slug if it is a page.
+      placeholder: "On /raga/bhairav, the avaroha renders the upper Sa as a lowercase s and the octave marker disappears."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+      description: The behaviour you think is correct, and why.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps from a clean checkout. Say whether you used `bun run dev` or a production build.
+      value: |
+        1. Run `bun install && bun run dev`
+        2. Open http://localhost:3000/...
+        3. Click ...
+        4. See ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Pick the closest surface. Choose "Not sure" if nothing fits.
+      options:
+        - Atlas and raga pages
+        - Prahar clock
+        - Audio and tanpura (Web Audio)
+        - Search, filters, and compare
+        - Localisation (en / hi / bn)
+        - Build, typecheck, lint, or tests
+        - Rasa parity service (services/rasa)
+        - Documentation
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did this happen?
+      options:
+        - Local dev server (`bun run dev`)
+        - Local production build (`bun run build && bun run start`)
+        - The deployed site
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or version
+      description: The output of `git rev-parse --short HEAD`, or "main as of YYYY-MM-DD".
+      placeholder: "9f2c1ab"
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: OS, Bun, and browser
+      description: Include the Bun version from `bun --version`.
+      placeholder: "Windows 11 24H2, Bun 1.2.21, Chrome 141"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console or terminal output
+      description: Paste the error text, not a photo of the screen. Strip personal data first — the project ships no keys, but your terminal may contain other things.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched open and closed issues for the same problem.
+          required: true
+        - label: This is not a raga content correction, and not a security report.
+          required: true
+        - label: I can reproduce this on the commit above.
+          required: true

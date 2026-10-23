@@ -1,0 +1,69 @@
+flowchart TB
+  subgraph listener["Listener device"]
+    Browser["Browser with React 19"]
+    Audio["Web Audio graph"]
+    AudioMath["core audio maths in the client bundle"]
+    LocalCache["HTTP cache and static assets"]
+  end
+
+  subgraph edge["Vercel edge network"]
+    DNS["DNS and TLS"]
+    CDN["CDN cache"]
+    Router["App Router"]
+    Headers["Security headers"]
+    OGRoute["/og image route"]
+    API["/api/recommend and /api/healthz"]
+  end
+
+  subgraph server["Vercel server runtime"]
+    RSC["React Server Components"]
+    Core["packages/core pure functions"]
+    Seed["packages/seed dataset"]
+  end
+
+  subgraph python["Python reference service"]
+    FastAPI["FastAPI and uvicorn"]
+    RasaData["data.py, 24 ragas"]
+    Pytest["pytest scoring and HTTP tests"]
+  end
+
+  subgraph containers["Docker and Fly.io fallback"]
+    Image["Multi stage Docker image"]
+    Compose["docker-compose local parity"]
+    Registry["GHCR image registry"]
+    Fly["Fly.io machine"]
+  end
+
+  subgraph observe["Observability"]
+    Health["/api/healthz probe"]
+    Logs["Vercel and Fly runtime logs"]
+    Smoke["Post deploy Playwright smoke"]
+  end
+
+  Browser --> DNS
+  Browser --> Audio
+  Audio --> AudioMath
+  DNS --> CDN
+  CDN --> LocalCache
+  CDN --> Router
+  Router --> Headers
+  Router --> RSC
+  Router --> OGRoute
+  Router --> API
+  RSC --> Core
+  Core --> Seed
+  API --> Core
+
+  Compose --> Image
+  Image --> Registry
+  Registry --> Fly
+
+  RasaData --> FastAPI
+  Pytest --> FastAPI
+  FastAPI -.reference parity only.-> Core
+
+  API --> Health
+  Fly --> Health
+  Health --> Logs
+  Router --> Logs
+  Smoke --> Router

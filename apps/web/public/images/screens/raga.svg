@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <title>Swarmandala — Bhairav</title>
+  <desc>Raga screen: Bhairav on the mandala, with aroha, avaroha, pakad, and notes on the raga.</desc>
+
+  <defs>
+    <radialGradient id="ragaGlow" cx="360" cy="430" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A33D" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#E8A33D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="#0E0C0A"/>
+  <rect width="1000" height="820" fill="url(#ragaGlow)"/>
+
+  <!-- top navigation -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(80 36)">
+      <circle r="11.5" stroke="#F4EBDD" stroke-opacity="0.38"/>
+      <circle r="4.4" fill="#E8A33D"/>
+      <circle cy="-11.5" r="1.6" fill="#F4EBDD"/>
+      <circle cx="8.1" cy="8.1" r="1.6" fill="#E8A33D"/>
+      <circle cx="-8.1" cy="8.1" r="1.6" fill="#F4EBDD" fill-opacity="0.5"/>
+      <circle cx="11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+      <circle cx="-11.5" cy="0" r="1.1" fill="#F4EBDD" fill-opacity="0.3"/>
+    </g>
+    <text x="103" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#F4EBDD">swarmandala</text>
+    <g font-size="11.5" letter-spacing="1.15" fill="#B9AB97">
+      <text x="596" y="46" fill="#F4EBDD">Atlas</text>
+      <text x="672" y="46">Prahar clock</text>
+      <text x="796" y="46">Compare</text>
+      <text x="892" y="46">Practice</text>
+      <text x="986" y="46">About</text>
+    </g>
+    <line x1="596" y1="55" x2="628" y2="55" stroke="#E8A33D" stroke-opacity="0.8"/>
+    <rect x="1214" y="22" width="146" height="28" rx="14" stroke="#F4EBDD" stroke-opacity="0.16"/>
+    <text x="1287" y="40" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B9AB97">19:24<tspan fill="#B9AB97" fill-opacity="0.5"> · </tspan><tspan fill="#E8A33D">YAMAN</tspan></text>
+  </g>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#F4EBDD" stroke-opacity="0.16"/>
+
+  <!-- breadcrumb -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#B9AB97">
+    <text x="80" y="112">ATLAS</text>
+    <text x="130" y="112" fill-opacity="0.4">/</text>
+    <text x="148" y="112">RAGAS</text>
+    <text x="210" y="112" fill-opacity="0.4">/</text>
+    <text x="228" y="112" fill="#E8A33D">BHAIRAV</text>
+  </g>
+
+  <!-- title and actions -->
+  <text x="80" y="192" font-family="Georgia, 'Times New Roman', serif" font-size="62" fill="#F4EBDD">Bhairav</text>
+  <text x="326" y="186" font-family="'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif" font-size="23" fill="#B9AB97">भैरव</text>
+
+  <rect x="1066" y="144" width="110" height="42" rx="21" stroke="#F4EBDD" stroke-opacity="0.22"/>
+  <text x="1121" y="169" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="1.5" fill="#F4EBDD">PRACTICE</text>
+  <rect x="1188" y="144" width="172" height="42" rx="21" fill="#E8A33D"/>
+  <path d="M1216 160 L1224 165.5 L1216 171 Z" fill="#0E0C0A"/>
+  <text x="1282" y="169" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="1.4" fill="#0E0C0A">HEAR THE SCALE</text>
+
+  <!-- meta -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="80" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">THAAT</text>
+    <text x="80" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#F4EBDD">Bhairav</text>
+
+    <text x="240" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">WATCH</text>
+    <text x="240" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#F4EBDD">1 · Bhor · 04—07</text>
+
+    <text x="480" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">VADI</text>
+    <text x="480" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#C94F35">d</text>
+
+    <text x="574" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">SAMVADI</text>
+    <text x="574" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#C94F35">r</text>
+
+    <text x="700" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">RASA</text>
+    <text x="700" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#F4EBDD">adbhuta · shanta</text>
+
+    <text x="900" y="228" font-size="8" letter-spacing="1.9" fill="#B9AB97" fill-opacity="0.65">SEASON</text>
+    <text x="900" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#F4EBDD">winter</text>
+
+    <line x1="80" y1="266" x2="1360" y2="266" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  </g>
+
+  <!-- left: scale on the mandala -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="80" y="302" font-size="9" letter-spacing="2.1" fill="#B9AB97">THE SCALE ON THE MANDALA</text>
+    <text x="600" y="302" text-anchor="end" font-size="9" letter-spacing="1.6" fill="#B9AB97" fill-opacity="0.65">SA = C · JUST INTONATION</text>
+  </g>
+
+  <circle cx="390" cy="510" r="164" stroke="#F4EBDD" stroke-opacity="0.24"/>
+  <circle cx="390" cy="510" r="150" stroke="#F4EBDD" stroke-opacity="0.08"/>
+
+  <path d="M390 368 A142 142 0 0 1 461 387" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M461 387 A142 142 0 0 1 512.97 581" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M512.97 581 A142 142 0 0 1 461 632.97" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M461 632.97 A142 142 0 0 1 319 632.97" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M319 632.97 A142 142 0 0 1 267.03 581" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M267.03 581 A142 142 0 0 1 267.03 439" stroke="#E8A33D" stroke-opacity="0.4"/>
+  <path d="M267.03 439 A142 142 0 0 1 390 368" stroke="#E8A33D" stroke-opacity="0.4"/>
+
+  <circle cx="390" cy="510" r="48" stroke="#E8A33D" stroke-opacity="0.25"/>
+  <circle cx="390" cy="510" r="40" fill="#E8A33D"/>
+  <text x="390" y="516" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#0E0C0A">Sa</text>
+  <text x="390" y="533" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="7" letter-spacing="1.6" fill="#0E0C0A" fill-opacity="0.65">C · TONIC</text>
+
+  <!-- twelve positions: S R G M P N shuddha, d komal, Sa tonic -->
+  <circle cx="390" cy="346" r="8" fill="#F4EBDD"/>
+  <circle cx="471.86" cy="367.98" r="5.5" fill="#C94F35"/>
+  <circle cx="532.02" cy="428" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+  <circle cx="554" cy="510" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+  <circle cx="532.02" cy="592" r="5.5" fill="#E8A33D"/>
+  <circle cx="471.86" cy="652.02" r="5.5" fill="#E8A33D"/>
+  <circle cx="390" cy="674" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+  <circle cx="308.14" cy="652.02" r="5.5" fill="#E8A33D"/>
+  <circle cx="247.98" cy="592" r="5.5" fill="#C94F35"/>
+  <circle cx="226" cy="510" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+  <circle cx="247.98" cy="428" r="2.4" fill="#F4EBDD" fill-opacity="0.24"/>
+  <circle cx="308.14" cy="367.98" r="5.5" fill="#E8A33D"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="11" text-anchor="middle">
+    <text x="390" y="318" fill="#F4EBDD">S</text>
+    <text x="486" y="345" fill="#C94F35">r</text>
+    <text x="555" y="415" fill="#B9AB97" fill-opacity="0.28">R</text>
+    <text x="581" y="510" fill="#B9AB97" fill-opacity="0.28">g</text>
+    <text x="555" y="606" fill="#E8A33D">G</text>
+    <text x="486" y="676" fill="#E8A33D">M</text>
+    <text x="390" y="701" fill="#B9AB97" fill-opacity="0.28">M^</text>
+    <text x="294" y="676" fill="#E8A33D">P</text>
+    <text x="225" y="606" fill="#C94F35">d</text>
+    <text x="199" y="510" fill="#B9AB97" fill-opacity="0.28">D</text>
+    <text x="225" y="415" fill="#B9AB97" fill-opacity="0.28">n</text>
+    <text x="294" y="345" fill="#E8A33D">N</text>
+  </g>
+
+  <!-- legend -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="8.5" letter-spacing="1.5" fill="#B9AB97">
+    <circle cx="250" cy="724" r="3.5" fill="#E8A33D"/>
+    <text x="260" y="727">SHUDDHA</text>
+    <circle cx="344" cy="724" r="3.5" fill="#C94F35"/>
+    <text x="354" y="727">KOMAL</text>
+    <circle cx="432" cy="724" r="3.5" fill="#F4EBDD"/>
+    <text x="442" y="727">SA</text>
+  </g>
+  <text x="390" y="754" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#B9AB97" fill-opacity="0.8">Seven notes · komal Re and komal Dha · no tivra Ma.</text>
+
+  <!-- right: aroha / avaroha -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="720" y="302" font-size="9" letter-spacing="2.1" fill="#B9AB97">AROHA · ASCENT</text>
+    <text x="1360" y="302" text-anchor="end" font-size="9" letter-spacing="1.6" fill="#B9AB97" fill-opacity="0.55">8 NOTES</text>
+
+    <g>
+      <rect x="720" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+      <text x="755.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#E8A33D">S</text>
+      <rect x="800" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.4"/>
+      <text x="835.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#C94F35">r</text>
+      <rect x="880" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="915.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">G</text>
+      <rect x="960" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="995.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">M</text>
+      <rect x="1040" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1075.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">P</text>
+      <rect x="1120" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.4"/>
+      <text x="1155.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#C94F35">d</text>
+      <rect x="1200" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1235.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">N</text>
+      <rect x="1280" y="316" width="71" height="44" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+      <text x="1315.5" y="344" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#E8A33D">S'</text>
+    </g>
+
+    <text x="720" y="396" font-size="9" letter-spacing="2.1" fill="#B9AB97">AVAROHA · DESCENT</text>
+    <text x="1360" y="396" text-anchor="end" font-size="9" letter-spacing="1.6" fill="#B9AB97" fill-opacity="0.55">8 NOTES</text>
+
+    <g>
+      <rect x="720" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+      <text x="755.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#E8A33D">S'</text>
+      <rect x="800" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="835.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">N</text>
+      <rect x="880" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.4"/>
+      <text x="915.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#C94F35">d</text>
+      <rect x="960" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="995.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">P</text>
+      <rect x="1040" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1075.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">M</text>
+      <rect x="1120" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+      <text x="1155.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F4EBDD">G</text>
+      <rect x="1200" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#C94F35" stroke-opacity="0.4"/>
+      <text x="1235.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#C94F35">r</text>
+      <rect x="1280" y="410" width="71" height="44" rx="2" fill="#171310" stroke="#E8A33D" stroke-opacity="0.35"/>
+      <text x="1315.5" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#E8A33D">S</text>
+    </g>
+
+    <text x="720" y="496" font-size="9" letter-spacing="2.1" fill="#B9AB97">PAKAD · THE PHRASE THAT NAMES IT</text>
+  </g>
+  <text x="720" y="534" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#F4EBDD">G<tspan fill="#E8A33D"> · </tspan>M<tspan fill="#E8A33D"> · </tspan>r<tspan fill="#E8A33D"> · </tspan>S<tspan fill="#E8A33D"> · </tspan>r<tspan fill="#E8A33D"> · </tspan>N<tspan fill="#E8A33D"> · </tspan>d<tspan fill="#E8A33D"> · </tspan>P</text>
+
+  <line x1="720" y1="562" x2="1360" y2="562" stroke="#F4EBDD" stroke-opacity="0.16"/>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="720" y="590" font-size="9" letter-spacing="2.1" fill="#B9AB97">ABOUT THIS RAGA</text>
+    <g font-size="13" fill="#B9AB97">
+      <text x="720" y="618">Bhairav opens the day with komal Re and komal Dha. Its ascending line is</text>
+      <text x="720" y="640">slow to leave the upper Sa, and komal Re is treated as a resting note rather</text>
+      <text x="720" y="662">than a passing one. The result is a raga that feels both ancient and alert.</text>
+    </g>
+
+    <text x="720" y="704" font-size="9" letter-spacing="2.1" fill="#B9AB97">HEAR IT NEXT</text>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="720" y="718" width="200" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="736" y="740" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#F4EBDD">Ahir Bhairav</text>
+    <text x="736" y="758" font-size="8.5" letter-spacing="1.2" fill="#B9AB97">WATCH 2 · 07—10</text>
+
+    <rect x="940" y="718" width="200" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="956" y="740" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#F4EBDD">Lalit</text>
+    <text x="956" y="758" font-size="8.5" letter-spacing="1.2" fill="#B9AB97">WATCH 1 · 04—07</text>
+
+    <rect x="1160" y="718" width="200" height="54" rx="2" fill="#171310" stroke="#F4EBDD" stroke-opacity="0.12"/>
+    <text x="1176" y="740" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#F4EBDD">Miyan ki Todi</text>
+    <text x="1176" y="758" font-size="8.5" letter-spacing="1.2" fill="#B9AB97">WATCH 3 · 10—13</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="80" y1="832" x2="1360" y2="832" stroke="#F4EBDD" stroke-opacity="0.16"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="1.8" fill="#B9AB97" fill-opacity="0.7">
+    <text x="80" y="856">SWARMANDALA · BUILT IN KOLKATA</text>
+    <text x="1360" y="856" text-anchor="end">RAGA — 03 / 06</text>
+  </g>
+</svg>

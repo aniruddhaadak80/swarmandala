@@ -1,0 +1,29 @@
+stateDiagram-v2
+  [*] --> Idle
+  Idle --> Armed : pointer or keyboard intent
+  Armed --> Running : primary user gesture
+  Running --> Stopped : stop or route change
+  Stopped --> Armed : new gesture
+  Stopped --> [*]
+
+  state Running {
+    [*] --> Drone
+    Drone --> Practice : start the theka
+    Practice --> Drone : stop the theka
+    --
+    [*] --> Audible
+    Audible --> Muted : mute
+    Muted --> Audible : unmute
+    --
+    state MotionChoice <<choice>>
+    [*] --> MotionChoice
+    MotionChoice --> Animated : motion allowed
+    MotionChoice --> Static : prefers-reduced-motion
+    Animated --> Static : preference changes
+    Static --> Animated : preference changes
+  }
+
+  note right of Idle : No AudioContext exists until a user gesture
+  note right of Armed : AudioContext is created and resumed inside the gesture handler
+  note right of Running : Mute and reduced motion are parallel flags, not lifecycle exits
+  note right of Stopped : Context is suspended, not destroyed, so a gesture can resume it

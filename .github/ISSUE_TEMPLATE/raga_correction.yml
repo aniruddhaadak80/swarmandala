@@ -1,0 +1,104 @@
+name: Raga correction
+description: Fix or extend the musical content of the atlas. A citation is required.
+title: "[raga]: "
+labels: ["raga-data"] # Create this label once under Issues > Labels.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Raga entries are claims about a living tradition, so this form asks for a source before it
+        asks for an opinion. An edition and page, or a recording and timestamp, is enough — a
+        teacher's name and the lineage they belong to also count.
+
+        Gharanas disagree about aroha, prahar, vadi, and samvadi. If your source conflicts with the
+        entry, the likely outcome is that both versions are recorded with attribution, not that one
+        silently replaces the other. See
+        [CONTRIBUTING.md](https://github.com/aniruddhaadak/swarmandala/blob/main/CONTRIBUTING.md#citations).
+
+        Wrong place? Bugs and feature requests have their own forms.
+
+  - type: input
+    id: raga
+    attributes:
+      label: Which raga?
+      description: The slug if you know it (for example `bhairav`), otherwise the name as it appears in the atlas.
+      placeholder: "bhairav / Bhairav"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: field
+    attributes:
+      label: What is being corrected?
+      options:
+        - Aroha (ascending phrase)
+        - Avaroha (descending phrase)
+        - Pakad (signature phrase)
+        - Vadi or samvadi
+        - Prahar (watch of the day)
+        - Thaat
+        - Rasa or mood
+        - Description or English name
+        - Devanagari spelling
+        - Missing raga
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: What does the atlas say now?
+      description: Quote the current value. Leave blank if the raga or field is missing entirely.
+      placeholder: "aroha: S r G M P d N S'"
+    validations:
+      required: false
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should it say?
+      description: Use the atlas notation — `S R G M P D N`, lowercase for komal, `M^` for tivra Ma, trailing `'` for the upper octave.
+      placeholder: "aroha: S r G M P d N S'  →  S r G M P d N S' (no change to notes; the komal Re should be marked as a resting note in the description)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Required. One source per line — author, title, publisher, year, page; or artist, album, label, year, timestamp. Links are welcome but do not replace the citation.
+      placeholder: |
+        Author, *Title*, Publisher, Year, p. 000.
+        Artist, *Album*, Label, Year, track 0 @ 02:14.
+    validations:
+      required: true
+
+  - type: input
+    id: tradition
+    attributes:
+      label: Lineage or gharana (optional)
+      description: If the correction comes from a particular tradition or teacher, name it. This helps us present the disagreement accurately.
+      placeholder: "Jaipur-Atrauli, as taught by ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else that helps a reviewer
+      description: Recordings you compared, why the sources differ, whether the change is devotional or seasonal in character.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have included a citation (edition and page, or recording and timestamp).
+          required: true
+        - label: I understand that a conflicting gharana may be recorded alongside this correction rather than replaced.
+          required: true
+        - label: This correction is not copied from a language model or from memory without a source.
+          required: true

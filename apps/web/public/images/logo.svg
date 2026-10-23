@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <title>Swarmandala mark</title>
+  <desc>A twelve-position swara mandala, tonic Sa at the top, with a marigold sun disc at its centre.</desc>
+
+  <!-- orbit -->
+  <circle cx="128" cy="128" r="96" stroke="#F4EBDD" stroke-opacity="0.10"/>
+  <circle cx="128" cy="128" r="84" stroke="#F4EBDD" stroke-opacity="0.30"/>
+  <circle cx="128" cy="128" r="74" stroke="#F4EBDD" stroke-opacity="0.08"/>
+
+  <!-- the scale: thin arcs joining the five sounded notes -->
+  <path d="M128 60 A68 68 0 0 1 186.89 94" stroke="#E8A33D" stroke-opacity="0.7" stroke-width="1.5"/>
+  <path d="M186.89 94 A68 68 0 0 1 186.89 162" stroke="#E8A33D" stroke-opacity="0.7" stroke-width="1.5"/>
+  <path d="M186.89 162 A68 68 0 0 1 94 186.89" stroke="#E8A33D" stroke-opacity="0.7" stroke-width="1.5"/>
+  <path d="M94 186.89 A68 68 0 0 1 60 128" stroke="#E8A33D" stroke-opacity="0.7" stroke-width="1.5"/>
+  <path d="M60 128 A68 68 0 0 1 128 60" stroke="#C94F35" stroke-opacity="0.38" stroke-width="1.1" stroke-dasharray="1 6" stroke-linecap="round"/>
+
+  <!-- sun disc -->
+  <circle cx="128" cy="128" r="48" stroke="#E8A33D" stroke-opacity="0.28"/>
+  <circle cx="128" cy="128" r="40" fill="#E8A33D"/>
+  <circle cx="128" cy="128" r="31" stroke="#0E0C0A" stroke-opacity="0.10"/>
+
+  <!-- twelve positions -->
+  <circle cx="128" cy="44" r="8.5" fill="#E8A33D"/>
+  <circle cx="128" cy="44" r="13" stroke="#F4EBDD" stroke-opacity="0.30"/>
+  <circle cx="170" cy="55.25" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="200.75" cy="86" r="4.4" fill="#E8A33D"/>
+  <circle cx="212" cy="128" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="200.75" cy="170" r="4.4" fill="#E8A33D"/>
+  <circle cx="170" cy="200.75" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="128" cy="212" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="86" cy="200.75" r="4.4" fill="#E8A33D"/>
+  <circle cx="55.25" cy="170" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="44" cy="128" r="4.4" fill="#E8A33D"/>
+  <circle cx="55.25" cy="86" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+  <circle cx="86" cy="55.25" r="2.2" fill="#F4EBDD" fill-opacity="0.30"/>
+
+  <!-- tonic label -->
+  <text x="128" y="25" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2.6" fill="#E8A33D">Sa</text>
+</svg>
