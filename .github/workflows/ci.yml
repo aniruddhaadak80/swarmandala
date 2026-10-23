@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 25
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -37,7 +37,7 @@ jobs:
           bun-version: "1.x"
 
       - name: Cache Bun downloads and Turbo output
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.bun/install/cache
@@ -71,7 +71,7 @@ jobs:
 
       - name: Upload Playwright artefacts
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playwright-artifacts
           path: |
