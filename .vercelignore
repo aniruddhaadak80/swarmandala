@@ -1,0 +1,7 @@
+services/
+docs/
+scripts/
+packages/core/tests/
+packages/seed/tests/
+**/*.test.ts
+**/*.test.tsx
