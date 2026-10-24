@@ -4,7 +4,7 @@
 
 A living atlas of Hindustani raga — twenty-four ragas, eight three-hour watches, a procedural tanpura, and a swara mandala you can play. No samples, no API keys, no backend. Everything you hear is synthesised in the browser with the Web Audio API.
 
-**Live:** https://swarmandala-rfz5ozvlh-aniruddha-adaks-projects.vercel.app
+**Live:** https://swarmandala-137gb333k-aniruddha-adaks-projects.vercel.app
 
 ## What's inside
 
