@@ -4,16 +4,43 @@
  * Run with: bun run loc
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join, relative } from "node:path";
+import { join } from "node:path";
 
 const ROOT = process.cwd();
-const INCLUDE = new Set([".ts", ".tsx", ".js", ".mjs", ".cjs", ".css", ".json", ".md", ".yml", ".yaml", ".py", ".rs", ".toml"]);
-const EXCLUDE_DIRS = new Set(["node_modules", ".next", ".turbo", "dist", "coverage", "test-results", "playwright-report", ".git", ".pytest_cache", "__pycache__", ".venv", "public/fonts"]);
+const INCLUDE = new Set([
+  ".ts",
+  ".tsx",
+  ".js",
+  ".mjs",
+  ".cjs",
+  ".css",
+  ".json",
+  ".md",
+  ".yml",
+  ".yaml",
+  ".py",
+  ".rs",
+  ".toml",
+]);
+const EXCLUDE_DIRS = new Set([
+  "node_modules",
+  ".next",
+  ".turbo",
+  "dist",
+  "coverage",
+  "test-results",
+  "playwright-report",
+  ".git",
+  ".pytest_cache",
+  "__pycache__",
+  ".venv",
+  "public/fonts",
+]);
 const EXCLUDE_FILES = new Set(["package-lock.json", "bun.lockb"]);
 
 let files = 0;
 let lines = 0;
-let byExt = {};
+const byExt = {};
 
 function walk(dir) {
   for (const entry of readdirSync(dir)) {
