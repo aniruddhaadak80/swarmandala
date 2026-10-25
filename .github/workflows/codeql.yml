@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@3306ba4df796b6b5059316f3af8bdea1e2138c9b # v4.39.1
         with:
           languages: ${{ matrix.language }}
           queries: security-and-quality
@@ -40,6 +40,6 @@ jobs:
       # No build step: the JS/TS and Python extractors do not need one here,
       # and skipping it keeps this workflow independent of the app's toolchain.
       - name: Perform CodeQL analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@3306ba4df796b6b5059316f3af8bdea1e2138c9b # v4.39.1
         with:
           category: "/language:${{ matrix.language }}"
