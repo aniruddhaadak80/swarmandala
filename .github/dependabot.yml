@@ -17,7 +17,7 @@ updates:
   schedule:
     interval: weekly
     day: monday
-    time: 09:00
+    time: "09:00"
     timezone: Asia/Kolkata
   open-pull-requests-limit: 5
   versioning-strategy: increase
@@ -107,7 +107,7 @@ updates:
   schedule:
     interval: weekly
     day: monday
-    time: 09:15
+    time: "09:15"
     timezone: Asia/Kolkata
   open-pull-requests-limit: 5
   commit-message:
@@ -127,7 +127,7 @@ updates:
   schedule:
     interval: weekly
     day: monday
-    time: 09:30
+    time: "09:30"
     timezone: Asia/Kolkata
   open-pull-requests-limit: 5
   commit-message:
