@@ -12,7 +12,9 @@ export default defineConfig({
   },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
   webServer: {
-    command: "bun --cwd apps/web run start",
+    // `bun --cwd` is not a valid `bun run` flag; let Playwright set the cwd.
+    command: "bun run start",
+    cwd: "apps/web",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

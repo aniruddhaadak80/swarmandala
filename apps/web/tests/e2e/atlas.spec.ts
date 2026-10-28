@@ -9,5 +9,6 @@ test("atlas filters by search", async ({ page }) => {
 
 test("atlas shows 24 ragas by default", async ({ page }) => {
   await page.goto("/atlas");
-  await expect(page.getByText("24 ragas")).toBeVisible();
+  // Exact match: the hero copy also contains the phrase "24 ragas".
+  await expect(page.getByText("24 ragas", { exact: true })).toBeVisible();
 });

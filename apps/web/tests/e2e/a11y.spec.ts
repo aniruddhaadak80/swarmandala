@@ -1,6 +1,11 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
+// axe scans every route end-to-end; on shared runners that regularly brushes
+// the 30s default. Settle animations and give each scan its own budget.
+test.describe.configure({ timeout: 90_000 });
+test.use({ reducedMotion: "reduce" });
+
 const routes = ["/", "/atlas", "/raga/yaman", "/compare", "/practice", "/about"];
 
 for (const route of routes) {
