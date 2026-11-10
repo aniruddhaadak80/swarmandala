@@ -45,7 +45,12 @@ const byExt = {};
 function walk(dir) {
   for (const entry of readdirSync(dir)) {
     const full = join(dir, entry);
-    const stat = statSync(full);
+    let stat;
+    try {
+      stat = statSync(full);
+    } catch {
+      continue; // entry vanished between readdirSync and statSync
+    }
     if (stat.isDirectory()) {
       if (EXCLUDE_DIRS.has(entry)) continue;
       walk(full);
@@ -54,7 +59,13 @@ function walk(dir) {
       const ext = dot >= 0 ? entry.slice(dot) : "";
       if (!INCLUDE.has(ext)) continue;
       if (EXCLUDE_FILES.has(entry)) continue;
-      const content = readFileSync(full, "utf8");
+      let content;
+      try {
+        // Read directly; the path may have changed since readdirSync listed it.
+        content = readFileSync(full, "utf8");
+      } catch {
+        continue;
+      }
       const count = content.split(/\r?\n/).length;
       files++;
       lines += count;
