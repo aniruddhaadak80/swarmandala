@@ -23,6 +23,7 @@ the question — it is how the archive stays usable.
 ## What to include
 
 For anything that behaves incorrectly, a report we can act on contains:
+
 1. **What you expected and what happened.** One or two sentences, plus the URL or route if it is a
    page.
 2. **Steps to reproduce.** Numbered, starting from a clean checkout where possible. Say whether you

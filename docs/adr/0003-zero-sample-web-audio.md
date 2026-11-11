@@ -20,6 +20,7 @@ For the tanpura, `pluckPartials` generates a slightly inharmonic plucked-string 
 For the tabla, `tablaSpec` maps each bol to a membrane description: fundamental pitch, pitch drop, glide time, noise amount, duration, and brightness. The browser uses those values to shape a short pitched body plus noise. The theka itself comes from `packages/core/src/taal.ts`, so the audio follows the same matras, vibhags, sam, and khali as the visual cycle.
 
 Audio policy:
+
 - No `AudioContext` is created on page load. The first context is created or resumed inside a user gesture.
 - Sound is muted by default. The interface says so before the first click: "Sound stays off until you ask for it."
 - Muting ramps the master gain to zero instead of tearing down the graph, so unmuting is immediate and does not restart the drone.

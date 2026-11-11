@@ -106,6 +106,7 @@ Every pull request must pass these locally and in CI (`.github/workflows/ci.yml`
 | End-to-end       | `bunx playwright test` | Chromium against the built app                                        |
 
 Two practical notes:
+
 - **Build before e2e.** `playwright.config.ts` starts `bun --cwd apps/web run start`, which serves the
   production build on port 3000. Run `bun run build` first, or Playwright will fail to boot.
 - **Lint is also a format check.** `bun run lint` runs `biome check .`; a formatting-only failure is
@@ -148,6 +149,7 @@ Anything else — `Re`, `G#`, `m`, a missing apostrophe — fails validation.
 ### What the validator enforces
 
 `validateRagas` in `packages/seed/src/schema.ts` rejects an entry when:
+
 - the slug is not lowercase kebab-case, or is a duplicate;
 - `name` or `devanagari` is empty;
 - `description` is shorter than 80 characters, or `mood` shorter than 20;
@@ -222,6 +224,7 @@ change scoring, weights, or season mapping, change both and keep their tests gre
 ## Code style
 
 Formatting and linting are not a matter of debate here — Biome decides.
+
 - `bun run lint` must pass, and `bun run format` is the only formatter you need. The config is
   `biome.json`: two-space indentation, 100-column lines, double quotes, semicolons.
 - TypeScript is strict, with `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`, and

@@ -55,6 +55,7 @@ remapped; the raw source wording is quoted where it is ambiguous.
 (`?action=raw`) rather than rendered prose, because the rendered article and its
 own infobox disagree in at least two cases (Ahir Bhairav, Desh). Each raga was
 then checked against a second source:
+
 - **[Tanarang](https://tanarang.com/raag-index/)** — Acharya Tanarang's teaching
   archive. Every raga page has an explicit _Swar / Jati / Thaat / Vadi–Samvadi /
   Time / Aaroh–Avroh_ table, which makes it the most mechanically comparable
@@ -67,6 +68,7 @@ then checked against a second source:
   (Pilu, Hamsadhwani, Bageshri, Yaman, Darbari).
 
 **Confidence** is confidence that the row _as recorded_ is musically defensible:
+
 - **high** — every field agrees with at least two sources, or the only variance
   is a naming quibble.
 - **medium** — fields are right but a source contradicts itself, or one field is
@@ -445,6 +447,7 @@ opinion". See [docs/reference/raga-audit.json](./raga-audit.json).
 ### 7.1 What should not be "fixed"
 
 Three entries look suspicious and are actually right:
+
 - **Bageshri's Pa in descent** — Bor's avaroha contains `m P D`, so the dataset
   is supported.
 - **Lalit's both-Ma ascent** — `M` then `M^` is the correct order; the two Ma are
