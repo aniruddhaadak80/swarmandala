@@ -14,6 +14,7 @@ Observability has to be proportionate. A free atlas does not need a full APM sta
 ## Decision
 
 Use Vercel as the primary runtime and keep the container path deployable but secondary.
+
 - **Production**: Vercel's Git integration builds and serves `apps/web` from `main`, and creates preview deployments for branches and pull requests. The `deploy-vercel.yml` workflow is a manual CLI path for redeploying a specific ref; it is not the primary deploy trigger. `next.config.ts` applies `X-Content-Type-Options`, `Referrer-Policy`, and `X-Frame-Options` to every path.
 - **Container fallback**: a multi-stage Dockerfile builds the Next.js app and runs the production server; `docker-compose` reproduces the app locally; the Fly.io configuration runs the same image. The container path is exercised manually before a release, not on every pull request.
 - **Health**: `/api/healthz` returns a small JSON document with the service status, the build identifier, and the loaded raga count. It does not touch the network or a database. It is intentionally shallow: a 200 means the process is alive and the seed loaded, not that every page is correct.

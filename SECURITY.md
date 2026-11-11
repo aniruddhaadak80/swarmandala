@@ -24,6 +24,7 @@ Use GitHub's private vulnerability reporting:
 <https://github.com/aniruddhaadak/swarmandala/security/advisories/new>
 
 Please include:
+
 - the affected route, file, workflow, or dependency, and the commit you tested;
 - a minimal reproduction — a URL, a crafted slug or query string, or a failing test;
 - what an attacker gains, and what they need in order to start (network position, a victim click, a
@@ -45,6 +46,7 @@ test against infrastructure you do not own.
 ## Scope
 
 In scope:
+
 - **Cross-site scripting and injection** in raga pages, search, the compare view, or the i18n `t()`
   interpolation helper — anywhere a slug, query, or translated string reaches the DOM.
 - **Build and supply-chain issues** that are reachable in this repo: a malicious or typosquatted
@@ -59,6 +61,7 @@ In scope:
   query parameter that crashes the process or escapes the read-only contract.
 
 Out of scope:
+
 - **Musical accuracy.** A disputed aroha, prahar, or vadi is a content issue. Use the raga correction
   form; it requires a citation and gets a normal review.
 - **Accessibility and performance.** Real bugs, but not vulnerabilities. Open a bug report.

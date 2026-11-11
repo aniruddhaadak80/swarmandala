@@ -14,6 +14,7 @@ The app uses Tailwind CSS v4 through `@tailwindcss/postcss`. Tailwind v4 is CSS-
 Use a small, named token set rather than ad-hoc hex values, and ship fonts with the application.
 
 The palette is built around:
+
 - `--color-ink` — warm near-black for primary text;
 - `--color-ink-soft` — secondary text and notation labels;
 - `--color-paper` — warm off-white page ground;

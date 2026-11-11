@@ -14,6 +14,7 @@ The project has no user accounts, no listening history, and no ratings. It also 
 Rank ragas with a pure, deterministic function in `packages/core/src/recommend.ts`.
 
 Given `minutes`, the function resolves the current prahar with `praharForMinutes`. It then scores every non-excluded raga:
+
 - same watch: 100;
 - next watch, in the forward direction: 32;
 - two watches away: 12;

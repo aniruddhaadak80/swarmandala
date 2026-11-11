@@ -14,6 +14,7 @@ The site is also offline-first in spirit: the landing page, atlas, raga pages, a
 Store the ragas as a typed TypeScript module rather than in a database, CMS, or remote JSON endpoint.
 
 `packages/seed/src/ragas.ts` exports `RAGAS` as `as const satisfies readonly Raga[]`, followed by `getRaga`, `ragaSlugs`, and `RAGA_COUNT`. `packages/seed/src/schema.ts` exports `validateRagas` and `assertValidRagas`. Validation checks:
+
 - slugs are lowercase kebab-case and unique;
 - names and Devanagari names are non-empty;
 - descriptions are at least 80 characters and moods at least 20;

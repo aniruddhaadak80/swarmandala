@@ -44,6 +44,7 @@ Eight prahars, three hours each, minutes are local time-of-day `0..1439`:
 
 Scoring for a raga whose watch is `distance = (current - raga + 8) % 8` watches
 behind the current one:
+
 - same watch (`distance == 0`): **100**
 - next watch (`distance == 1`): **32**
 - two watches away (`distance == 2`): **12**
@@ -104,6 +105,7 @@ returns **422**. `season` is optional (one of `spring`, `summer`, `monsoon`,
 ```
 
 Reasons are the same strings the TypeScript engine produces:
+
 - `Sung in the <Name> watch (<english>)`
 - `Opens the next watch`
 - `Two watches away, still in the air`
