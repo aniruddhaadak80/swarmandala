@@ -274,12 +274,12 @@ chore(ci): cache Bun installs between runs
 
 - [ ] The change is one logical thing, described in the title and body.
 - [ ] `bun run typecheck`, `bun run lint`, `bun run test`, `bun run build`, and `bunx playwright test`
-  pass locally.
+      pass locally.
 - [ ] New behaviour has a test; a bug fix has a regression test.
 - [ ] Raga data changes cite a published source or a named recording, with the note added to
-  `docs/reference/ragas.md`.
+      `docs/reference/ragas.md`.
 - [ ] If the raga count changed, the seed tests, the three locale files, and `services/rasa/data.py`
-  were updated together.
+      were updated together.
 - [ ] Screenshots or a short recording are attached for UI changes, including mobile width.
 - [ ] No secrets, tokens, `.env` files, or generated build output are included.
 - [ ] Documentation that is now wrong has been updated in the same PR.
